@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*a链接虚线~*/
+a:focus{outline:none;}   /*not for ie6&ie7 */
+/*ie6 &ie7 via js $('a').focus(function(){$(this).blur();});*/
+/*input 框线*/
+input:focus{outline:none;}
+/*contenteditale el 框线*/
+*[contenteditable="true"]:focus {
+  outline: 0;
+ }
+ 
+/*el unselectable*/
+.unselectable {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  cursor: default; 
+  }
+  
+
