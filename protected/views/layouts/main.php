@@ -99,10 +99,12 @@
 	<!--product js  -->
 	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/modernizr.custom.79639.js"></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/slider.js"></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/slides.min.jquery.js"></script>
 	<!--products js  -->
 	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/hoverdir.js"></script>
 	<!--all js  -->
-	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/app.js"></script>	
+	<script type="text/javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/app.js"></script>
+		
 
 </body>
 </html>

@@ -1,28 +1,87 @@
 
 
-	<div class="page-wrapper service">
+	<div class="page-wrapper activity">
 		<div class="nav-placeholder top"></div>
-		<div class="container service">
-			<div class="title"><img src="<?php echo Yii::app()->baseUrl; ?>/images/service-title.jpg" /></div>
+		<div class="container activity">
+			<div class="title"><img src="<?php echo Yii::app()->baseUrl; ?>/images/activity-title.png" /></div>
 
-			<!--sidebar-->
-			<div class="sidebar">
 				<ul class="menus">
-
-					<li class="<?php if ($this->action->id == 'online') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/activity/online'); ?>" >在线活动 </a><span> > </span></li>
-					<li class="<?php if ($this->action->id == 'history') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/activity/history'); ?>" >历史活动</a><span> > </span></li>
-					<li class="<?php if ($this->action->id == 'company') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/activity/company'); ?>">企业事迹</a><span> > </span></li>
+					<li class="<?php if ($this->action->id == 'online') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/activity/online'); ?>" >在线活动 </a></li>
+					<li class="<?php if ($this->action->id == 'history') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/activity/history'); ?>" >历史活动</a></li>
+					<li class="<?php if ($this->action->id == 'company') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/activity/company'); ?>">企业事迹</a></li>
 				</ul>
-			</div>
-
-			<!--right content-->
-			<div class="right-content">
-				<?php echo $sub_content; ?>
-			</div>
-
-			<div class="placeholder"></div>
-			
 		</div>
-		<div class="nav-placeholder bottom"></div>
+		<div id="slides">
+			<div class="slides_container">
+				
+				<div class="slide">
+					<div class="item">
+						<div class="title"><a href="#">新闻标题，新闻标题，新闻标题</a></div>
+						<div class="content">
+							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+							<div class="des">新闻简介新闻简介</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title"><a href="#">新闻标题，新闻标题，新闻标题</a></div>
+						<div class="content">
+							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+							<div class="des">新闻简介新闻简介</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title"><a href="#">新闻标题，新闻标题，新闻标题</a></div>
+						<div class="content">
+							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+							<div class="des">新闻简介新闻简介</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="slide">
+					<div class="item">
+						<div class="title"><a href="#">新闻标题，新闻标题，新闻标题</a></div>
+						<div class="content">
+							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+							<div class="des">新闻简介新闻简介</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title"><a href="#">新闻标题，新闻标题，新闻标题</a></div>
+						<div class="content">
+							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+							<div class="des">新闻简介新闻简介</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title"><a href="#">新闻标题，新闻标题，新闻标题</a></div>
+						<div class="content">
+							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+							<div class="des">新闻简介新闻简介</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="slide">
+					<div class="item">
+						<div class="title"><a href="#">新闻标题，新闻标题，新闻标题</a></div>
+						<div class="content">
+							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+							<div class="des">新闻简介新闻简介</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="title"><a href="#">新闻标题，新闻标题，新闻标题</a></div>
+						<div class="content">
+							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+							<div class="des">新闻简介新闻简介</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<div class="bottom-img"></div>
+		<div class="left-img"></div>
 	</div>
 

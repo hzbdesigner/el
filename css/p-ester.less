@@ -149,7 +149,7 @@ html,body{background-color:#e8e8e8;height:100%;width:100%;}
 	}
 	//brand css
 	&.brand{ background:url(../images/brand-banner.jpg) 0 0 no-repeat;background-size:cover; }  //fullscreen bg
-	&.service{ background:url(../images/service-banner.jpg) 0 0 no-repeat;background-size:cover; }  //fullscreen bg
+	&.service{ background:url() 0 0 no-repeat;background-size:cover; }  //fullscreen bg
 
 	.container.brand{.bgwhite;margin-top:50px;border-bottom:6px solid @gold;
 		.placeholder{width:100%;height:35px;background-color:transparent;}
@@ -201,11 +201,24 @@ html,body{background-color:#e8e8e8;height:100%;width:100%;}
 			}
 		}
 		.placeholder{width:100%;height:35px;clear:both;}
-
 	}
 	
-
+	.container.activity{background-color:transparent;.pr;
+		.menus{.clearfix;margin-left:50%;.fl;margin-top:25px;
+			li{.fl;margin-right:15px;.pr;left:-50%;
+				a{
+				&:hover{color:@gold;}
+				}
+			}
+			li.active{
+			a{color:@gold;}
+			}
+		}
+	}
+	.bottom-img{height:214px;.pa;left:0px;bottom:0px;width:100%;background:url(../images/bottom-img.png) repeat-x;}
+	.left-img{height:294px;.pa;left:0px;bottom:130px;width:317px;background:url(../images/left-img.png) no-repeat;z-index:1000;}
 }
+
 
 //--------------------------------
 //style_index-----------
@@ -595,7 +608,69 @@ html,body{background-color:#e8e8e8;height:100%;width:100%;}
 	}
 }
 
+// activity slide
+		
+		#slides{.pa;top:250px;width:960px;height:260px;z-index:999;left:0;right:0;margin-left:auto;margin-right:auto;
+			.pagination{.pr;bottom:0px;margin-left:50%;margin-top:30px;height:30px;.fl;
+				li{.pr;margin-right:10px;left:-50%;.fl;background-color:#ddd;width:24px;height:24px;.tc;line-height:24px;color:#666;
+					&:hover{color:@gold;}
+				}
+			}
+			.next{.pa;right:200px;top:230px;
+				&:hover{color:@gold;}
+			}
 
+			.prev{.pa;left:180px;top:230px;
+				&:hover{color:@gold;}
+			}
+		}
+		.slides_container {
+			width:960px;
+			display:none;
+		}
+
+		.slides_container div.slide {
+			width:960px;
+			height:205px;
+			display:block;
+		}
+		
+		/*
+			Set the size of your carousel items
+		*/
+		.item {
+			float:left;
+			width:300px;
+			height:200px;
+			margin-right:18px;
+			background:#ebe8e3;
+			border:1px solid #ccc;
+			&:hover{background:#c8c4be;}
+			.title{.tl;.ml15;
+				a{.fs14;color:@gold;
+					&:hover{text-decoration:underline;}
+				}
+			}
+			.content{.mt15;.ml15;height:150px;.mr15;.clearfix;
+				.img{.fl;width:150px;height:130px;
+					img{width:150px;height:130px;}
+				}
+				.des{.fl;margin-left:10px;height:150px;color:#666;.fs12;.mt10;line-height:18px;}
+			}
+
+		}
+		
+
+		.pagination {
+			list-style:none;
+			margin:0;
+			padding:0;
+		}
+
+
+		.pagination .current a {
+			color:@gold;
+		}
 
 
 

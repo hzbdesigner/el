@@ -25,7 +25,10 @@ $(function(){
 	//products js
 	$('#da-thumbs > li').hoverdir();
 	
-	
+	$('#slides').slides({
+		preload: true,
+		generateNextPrev: true
+	});
 	
 	
 });
