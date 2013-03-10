@@ -1,4 +1,4 @@
-
+﻿
 	<div class="container">
 		<div class="row tabbable tabs-left">
 			
@@ -8,7 +8,7 @@
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane active" id="tab1">
-						<p>统计：共有32条记录，第1页，共2页。</p>
+						<p>统计：共有32条记录，第1页，共2页。尼玛。逼我修改一下，乱码你没啊</p>
 						<table class="table table-striped table-condensed ">
 							<thead>
 								<tr>
