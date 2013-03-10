@@ -10,7 +10,14 @@ class ActivityController extends Controller
 	//
 	 public function actionIndex()
 	{
-	    	$sub_content = $this->renderPartial('/site/comingsong' ,array(),true);
+	    	$sub_content = $this->renderPartial('/activity/all' ,array(),true);
+	       	$this->render('index',array('sub_content' =>$sub_content));
+	}
+	//在线活动
+	 public function actionAll()
+	{
+	    
+	       	$sub_content = $this->renderPartial('/activity/all' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 	//在线活动
@@ -34,6 +41,12 @@ class ActivityController extends Controller
 	{
 	    
 	       	$sub_content = $this->renderPartial('/site/comingsoon' ,array(),true);
+	       	$this->render('index',array('sub_content' =>$sub_content));
+	}
+	//内容
+	 public function actionView()
+	{
+	       	$sub_content = $this->renderPartial('/activity/view' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 

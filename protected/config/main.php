@@ -53,12 +53,12 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=127.0.0.1;dbname=hxrs',
+			'connectionString' => 'mysql:host=127.0.0.1;dbname=el',
 			'emulatePrepare' => true,
 			'username' => 'trhzb',
 			'password' => 'trhzb',
 			'charset' => 'utf8',
-			'tablePrefix' =>'hxrs_',
+			'tablePrefix' =>'el_',
 
 		),
 		

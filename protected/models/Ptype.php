@@ -1,28 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "{{article}}".
+ * This is the model class for table "{{ptype}}".
  *
- * The followings are the available columns in table '{{article}}':
- * @property integer $aid
- * @property integer $cid
- * @property integer $uid
- * @property string $title
- * @property string $content
- * @property string $dateline
- * @property integer $isshow
- * @property integer $readnum
+ * The followings are the available columns in table '{{ptype}}':
+ * @property integer $tid
+ * @property string $ttitle
  *
  * The followings are the available model relations:
- * @property Catalog $c
- * @property User $u
+ * @property Product[] $products
  */
-class Article extends CActiveRecord
+class Ptype extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Article the static model class
+	 * @return Ptype the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -34,7 +27,7 @@ class Article extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{article}}';
+		return '{{ptype}}';
 	}
 
 	/**
@@ -45,13 +38,11 @@ class Article extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cid, uid, title, content', 'required'),
-			array('cid, uid, isshow, readnum', 'numerical', 'integerOnly'=>true),
-			array('title', 'length', 'max'=>1024),
-			array('dateline', 'safe'),
+			array('ttitle', 'required'),
+			array('ttitle', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('aid, cid, uid, title, content, dateline, isshow, readnum', 'safe', 'on'=>'search'),
+			array('tid, ttitle', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,8 +54,7 @@ class Article extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'c' => array(self::BELONGS_TO, 'Catalog', 'cid'),
-			'u' => array(self::BELONGS_TO, 'User', 'uid'),
+			'products' => array(self::HAS_MANY, 'Product', 'tid'),
 		);
 	}
 
@@ -74,14 +64,8 @@ class Article extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'aid' => 'Aid',
-			'cid' => 'Cid',
-			'uid' => 'Uid',
-			'title' => 'Title',
-			'content' => 'Content',
-			'dateline' => 'Dateline',
-			'isshow' => 'Isshow',
-			'readnum' => 'Readnum',
+			'tid' => 'Tid',
+			'ttitle' => 'Ttitle',
 		);
 	}
 
@@ -96,14 +80,8 @@ class Article extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('aid',$this->aid);
-		$criteria->compare('cid',$this->cid);
-		$criteria->compare('uid',$this->uid);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('content',$this->content,true);
-		$criteria->compare('dateline',$this->dateline,true);
-		$criteria->compare('isshow',$this->isshow);
-		$criteria->compare('readnum',$this->readnum);
+		$criteria->compare('tid',$this->tid);
+		$criteria->compare('ttitle',$this->ttitle,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

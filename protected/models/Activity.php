@@ -1,21 +1,23 @@
 <?php
 
 /**
- * This is the model class for table "{{banner}}".
+ * This is the model class for table "{{activity}}".
  *
- * The followings are the available columns in table '{{banner}}':
- * @property integer $id
- * @property string $banner1
- * @property string $banner2
- * @property string $banner3
- * @property string $banner4
+ * The followings are the available columns in table '{{activity}}':
+ * @property integer $aid
+ * @property string $atitle
+ * @property string $acontent
+ * @property integer $tid
+ *
+ * The followings are the available model relations:
+ * @property Atype $t
  */
-class Banner extends CActiveRecord
+class Activity extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Banner the static model class
+	 * @return Activity the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -27,7 +29,7 @@ class Banner extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{banner}}';
+		return '{{activity}}';
 	}
 
 	/**
@@ -38,10 +40,12 @@ class Banner extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('banner1, banner2, banner3, banner4', 'length', 'max'=>256),
+			array('atitle, acontent, tid', 'required'),
+			array('tid', 'numerical', 'integerOnly'=>true),
+			array('atitle', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, banner1, banner2, banner3, banner4', 'safe', 'on'=>'search'),
+			array('aid, atitle, acontent, tid', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,6 +57,7 @@ class Banner extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			't' => array(self::BELONGS_TO, 'Atype', 'tid'),
 		);
 	}
 
@@ -62,11 +67,10 @@ class Banner extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'banner1' => 'Banner1',
-			'banner2' => 'Banner2',
-			'banner3' => 'Banner3',
-			'banner4' => 'Banner4',
+			'aid' => 'Aid',
+			'atitle' => 'Atitle',
+			'acontent' => 'Acontent',
+			'tid' => 'Tid',
 		);
 	}
 
@@ -81,11 +85,10 @@ class Banner extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('banner1',$this->banner1,true);
-		$criteria->compare('banner2',$this->banner2,true);
-		$criteria->compare('banner3',$this->banner3,true);
-		$criteria->compare('banner4',$this->banner4,true);
+		$criteria->compare('aid',$this->aid);
+		$criteria->compare('atitle',$this->atitle,true);
+		$criteria->compare('acontent',$this->acontent,true);
+		$criteria->compare('tid',$this->tid);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

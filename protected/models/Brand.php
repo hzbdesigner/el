@@ -1,22 +1,26 @@
 <?php
 
 /**
- * This is the model class for table "{{manager}}".
+ * This is the model class for table "{{brand}}".
  *
- * The followings are the available columns in table '{{manager}}':
- * @property integer $id
- * @property string $name
- * @property string $title
- * @property string $avatar
- * @property integer $type
- * @property string $description
+ * The followings are the available columns in table '{{brand}}':
+ * @property integer $bid
+ * @property string $btitle
+ * @property string $bdes
+ * @property string $bbanner
+ * @property string $bsubbanner
+ * @property string $bcontent
+ *
+ * The followings are the available model relations:
+ * @property Product $b
+ * @property Product[] $products
  */
-class Manager extends CActiveRecord
+class Brand extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Manager the static model class
+	 * @return Brand the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -28,7 +32,7 @@ class Manager extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{manager}}';
+		return '{{brand}}';
 	}
 
 	/**
@@ -39,15 +43,11 @@ class Manager extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, avatar, type', 'required'),
-			array('type', 'numerical', 'integerOnly'=>true),
-			array('name', 'length', 'max'=>256),
-			array('title', 'length', 'max'=>512),
-			array('avatar', 'length', 'max'=>1024),
-			array('description', 'safe'),
+			array('btitle, bdes, bbanner, bsubbanner, bcontent', 'required'),
+			array('btitle', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, name, title, avatar, type, description', 'safe', 'on'=>'search'),
+			array('bid, btitle, bdes, bbanner, bsubbanner, bcontent', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,6 +59,8 @@ class Manager extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'b' => array(self::BELONGS_TO, 'Product', 'bid'),
+			'products' => array(self::HAS_MANY, 'Product', 'bid'),
 		);
 	}
 
@@ -68,12 +70,12 @@ class Manager extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id' => 'ID',
-			'name' => 'Name',
-			'title' => 'Title',
-			'avatar' => 'Avatar',
-			'type' => 'Type',
-			'description' => 'Description',
+			'bid' => 'Bid',
+			'btitle' => 'Btitle',
+			'bdes' => 'Bdes',
+			'bbanner' => 'Bbanner',
+			'bsubbanner' => 'Bsubbanner',
+			'bcontent' => 'Bcontent',
 		);
 	}
 
@@ -88,12 +90,12 @@ class Manager extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('avatar',$this->avatar,true);
-		$criteria->compare('type',$this->type);
-		$criteria->compare('description',$this->description,true);
+		$criteria->compare('bid',$this->bid);
+		$criteria->compare('btitle',$this->btitle,true);
+		$criteria->compare('bdes',$this->bdes,true);
+		$criteria->compare('bbanner',$this->bbanner,true);
+		$criteria->compare('bsubbanner',$this->bsubbanner,true);
+		$criteria->compare('bcontent',$this->bcontent,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

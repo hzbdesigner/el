@@ -1,23 +1,27 @@
 <?php
 
 /**
- * This is the model class for table "{{project}}".
+ * This is the model class for table "{{product}}".
  *
- * The followings are the available columns in table '{{project}}':
- * @property integer $cid
- * @property string $title
- * @property string $subtitle
- * @property string $description
- * @property string $logo
- * @property string $link
- * @property integer $type
+ * The followings are the available columns in table '{{product}}':
+ * @property integer $pid
+ * @property string $ptitle
+ * @property integer $tid
+ * @property integer $bid
+ * @property string $pdes
+ * @property string $pimg
+ *
+ * The followings are the available model relations:
+ * @property Brand $brand
+ * @property Brand $b
+ * @property Ptype $t
  */
-class Project extends CActiveRecord
+class Product extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Project the static model class
+	 * @return Product the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -29,7 +33,7 @@ class Project extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{project}}';
+		return '{{product}}';
 	}
 
 	/**
@@ -40,15 +44,12 @@ class Project extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, logo, type', 'required'),
-			array('type', 'numerical', 'integerOnly'=>true),
-			array('title', 'length', 'max'=>256),
-			array('subtitle', 'length', 'max'=>1024),
-			array('logo, link', 'length', 'max'=>512),
-			array('description', 'safe'),
+			array('ptitle, tid, bid, pdes, pimg', 'required'),
+			array('tid, bid', 'numerical', 'integerOnly'=>true),
+			array('ptitle', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('cid, title, subtitle, description, logo, link, type', 'safe', 'on'=>'search'),
+			array('pid, ptitle, tid, bid, pdes, pimg', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -60,6 +61,9 @@ class Project extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'brand' => array(self::HAS_ONE, 'Brand', 'bid'),
+			'b' => array(self::BELONGS_TO, 'Brand', 'bid'),
+			't' => array(self::BELONGS_TO, 'Ptype', 'tid'),
 		);
 	}
 
@@ -69,13 +73,12 @@ class Project extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cid' => 'Cid',
-			'title' => 'Title',
-			'subtitle' => 'Subtitle',
-			'description' => 'Description',
-			'logo' => 'Logo',
-			'link' => 'Link',
-			'type' => 'Type',
+			'pid' => 'Pid',
+			'ptitle' => 'Ptitle',
+			'tid' => 'Tid',
+			'bid' => 'Bid',
+			'pdes' => 'Pdes',
+			'pimg' => 'Pimg',
 		);
 	}
 
@@ -90,13 +93,12 @@ class Project extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('cid',$this->cid);
-		$criteria->compare('title',$this->title,true);
-		$criteria->compare('subtitle',$this->subtitle,true);
-		$criteria->compare('description',$this->description,true);
-		$criteria->compare('logo',$this->logo,true);
-		$criteria->compare('link',$this->link,true);
-		$criteria->compare('type',$this->type);
+		$criteria->compare('pid',$this->pid);
+		$criteria->compare('ptitle',$this->ptitle,true);
+		$criteria->compare('tid',$this->tid);
+		$criteria->compare('bid',$this->bid);
+		$criteria->compare('pdes',$this->pdes,true);
+		$criteria->compare('pimg',$this->pimg,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

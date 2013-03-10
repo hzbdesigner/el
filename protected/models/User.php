@@ -6,11 +6,8 @@
  * The followings are the available columns in table '{{user}}':
  * @property integer $uid
  * @property string $username
- * @property string $password
  * @property string $email
- *
- * The followings are the available model relations:
- * @property Article[] $articles
+ * @property string $password
  */
 class User extends CActiveRecord
 {
@@ -40,13 +37,11 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username, password, email', 'required'),
-			array('username', 'length', 'max'=>64),
-			array('password', 'length', 'max'=>128),
-			array('email', 'length', 'max'=>256),
+			array('username, email, password', 'required'),
+			array('username, email, password', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('uid, username, password, email', 'safe', 'on'=>'search'),
+			array('uid, username, email, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -58,7 +53,6 @@ class User extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'articles' => array(self::HAS_MANY, 'Article', 'uid'),
 		);
 	}
 
@@ -70,8 +64,8 @@ class User extends CActiveRecord
 		return array(
 			'uid' => 'Uid',
 			'username' => 'Username',
-			'password' => 'Password',
 			'email' => 'Email',
+			'password' => 'Password',
 		);
 	}
 
@@ -88,8 +82,8 @@ class User extends CActiveRecord
 
 		$criteria->compare('uid',$this->uid);
 		$criteria->compare('username',$this->username,true);
-		$criteria->compare('password',$this->password,true);
 		$criteria->compare('email',$this->email,true);
+		$criteria->compare('password',$this->password,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

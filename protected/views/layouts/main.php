@@ -58,7 +58,7 @@
 							<li class="dropdown"><a href="<?php echo $this->createUrl('/service/liuyan') ; ?>">留言反馈</a></li>
 						</ul>
 					</li>
-					<li class="activity  nav-cell"><a href="<?php echo $this->createUrl('/activity/online');?>"> </a>
+					<li class="activity  nav-cell"><a href="<?php echo $this->createUrl('/activity');?>"> </a>
 						<ul class="dropdowns">
 							<li class="dropdown"><a href="<?php echo $this->createUrl('/activity/online');?>">在线活动</a></li>
 							<li class="dropdown"><a href="<?php echo $this->createUrl('/activity/history');?>">历史活动</a></li>

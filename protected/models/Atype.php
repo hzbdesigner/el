@@ -1,21 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "{{catalog}}".
+ * This is the model class for table "{{atype}}".
  *
- * The followings are the available columns in table '{{catalog}}':
- * @property integer $cid
- * @property string $title
+ * The followings are the available columns in table '{{atype}}':
+ * @property integer $tid
+ * @property string $ttitle
  *
  * The followings are the available model relations:
- * @property Article[] $articles
+ * @property Activity[] $activities
  */
-class Catalog extends CActiveRecord
+class Atype extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
-	 * @return Catalog the static model class
+	 * @return Atype the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
@@ -27,7 +27,7 @@ class Catalog extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{catalog}}';
+		return '{{atype}}';
 	}
 
 	/**
@@ -38,11 +38,11 @@ class Catalog extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title', 'required'),
-			array('title', 'length', 'max'=>512),
+			array('ttitle', 'required'),
+			array('ttitle', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('cid, title', 'safe', 'on'=>'search'),
+			array('tid, ttitle', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,7 +54,7 @@ class Catalog extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'articles' => array(self::HAS_MANY, 'Article', 'cid'),
+			'activities' => array(self::HAS_MANY, 'Activity', 'tid'),
 		);
 	}
 
@@ -64,8 +64,8 @@ class Catalog extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cid' => 'Cid',
-			'title' => 'Title',
+			'tid' => 'Tid',
+			'ttitle' => 'Ttitle',
 		);
 	}
 
@@ -80,8 +80,8 @@ class Catalog extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('cid',$this->cid);
-		$criteria->compare('title',$this->title,true);
+		$criteria->compare('tid',$this->tid);
+		$criteria->compare('ttitle',$this->ttitle,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
