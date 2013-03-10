@@ -876,3 +876,30 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/activity/images/news-img.jpg?1362836262943
 HTTP_REFERER=http://localhost/apps/el/index.php/activity/online
 ---
+2013/03/10 14:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/jquery-1.8.2.js".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('js/jquery-1.8.2...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/js/jquery-1.8.2.js
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 14:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/bootstrap.js".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('js/bootstrap.js')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/js/bootstrap.js
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 14:12:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/custom.js".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('js/custom.js')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/js/custom.js
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---

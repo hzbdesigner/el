@@ -1,0 +1,28 @@
+/*
+* Author: hzbdesigner
+* Template: admin Bootstrap Theme
+* Version: 1.0.0
+* Bootstrap version: 2.2.2
+*/
+
+
+/* start
+=================================================================== */
+.navbar{margin-bottom:20px !important;}
+.navbar-inner{border-radius: 0px !important;}
+legend{margin-bottom: 0px !important;}
+.form-horizontal .control-group .control-label{width: 50px !important;text-align: center !important;}
+.form-horizontal .control-group .controls{margin-left: 60px !important;}
+.control-group{margin-bottom: 10px !important;}
+.control-group.action button{margin-right: 20px;}
+.control-group.action {padding-left:60px;}
+label.radio.inline span{display: inline-block; width: 36px;}
+thead{color:#0088cc;}
+
+.container.login .brand{margin:0 auto;float: none;width: 100px;}
+.container.login .nav{display: none;}
+
+.container.login form{text-align: center;}
+.container.login form span{margin-right: 15px;}
+.container.login legend{width: 320px;margin: 0 auto; text-align: center;}
+.container.login label{display: inline-block;margin-left: 10px;}
