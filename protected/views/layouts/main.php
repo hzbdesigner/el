@@ -5,10 +5,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 <!--required  script-->
-<link href="<?php echo Yii::app()->baseUrl ; ?>/css/horizon.less" rel="stylesheet/less" type="text/css">
 <script language="javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/jquery.js"></script>
-<script language="javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/less.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/css/demo.css">
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/css/horizon.css">
 
 <!--demo  code example-->
 
@@ -24,7 +22,7 @@
 					<li class="about nav-cell"><a href="<?php echo $this->createUrl('/about');?>"> </a>
 						<ul class="dropdowns">
 							<li class="dropdown"><a href="<?php echo $this->createUrl('/about/brief');?>">公司简介</a></li>
-							<li class="dropdown"><a href="<?php echo $this->createUrl('/about/culture');?>">企业文化</a></li>
+							<!-- <li class="dropdown"><a href="<?php echo $this->createUrl('/about/culture');?>">企业文化</a></li> -->
 							<li class="dropdown"><a href="<?php echo $this->createUrl('/about/idea');?>">经营理念</a></li>
 						</ul>
 					</li>

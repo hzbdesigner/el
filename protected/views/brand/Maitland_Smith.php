@@ -1,12 +1,11 @@
 
-<div class="img view"><img src="<?php echo Yii::app()->baseUrl; ?>/images/brand-subbanner1.jpg" /></div>
+<div class="img view"><img src="<?php echo Yii::app()->baseUrl; ?>/images/maitlandsmith.jpg" /></div>
 <div class="des">
-	世界最顶级的家具之一，美国制造。迈克尔杰克逊，卡特总统，猫王，拳王阿里等诸多名流御用家私。
+30年来，Maitland-Smith一直专注于制造精致又独特的家具，饰品以及灯具。所有产品的创作灵感均来源于17与18世纪经典的英格兰风格。随着时间的推移，Maitland-Smith的创作不断进化，吸收新的材料与制作工艺，并开始融入世界各地的风格。
 </div>
 <div class="des">
-	126年经典历史，始于1886年，德国移民Albert F•Karges创立于美洲大陆。一次世界大战后，Karges二代Edwin遍游欧洲，探索钻研欧洲古典家具风格，为Karges的欧美经典奠定了坚实的基础。二次世界大战后，毕业于密歇根大学木材专业的Karges三代用其在木材油饰上丰富的知识与技能为Karges的极致完美画上了最后的句号。
-
+今天，Maitland-Smith通过其世界级的质量与创新设计成为行业领跑者。 精湛的铸品，精美的瓷器，精致的收尾，精心的手绘以及精良的木雕都是Maitland-Smith所专注与擅长的。
 </div>
 <div class="des">
-	集合美国精湛的手工雕刻工艺，优质大漆处理，126年来执着于纯手工艺制作。举凡雕刻、拼花、布艺对花部分，都是由资深美国匠师打造。被誉为美国“最后最精致的家具。”
+Maitland-Smith总厂址位于世界家具之都，几十年来一直为顾客提供最令人自豪的产品与服务。
 </div>

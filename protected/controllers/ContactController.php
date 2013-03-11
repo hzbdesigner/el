@@ -10,10 +10,16 @@ class ContactController extends Controller
 	//
 	 public function actionIndex()
 	{
-	    	$sub_content = $this->renderPartial('/site/comingsoon' ,array(),true);
+	    	$sub_content = $this->renderPartial('/contact/adress' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 
+
+	 public function actionQuanguo()
+	{
+	    	$sub_content = $this->renderPartial('/contact/quanguo' ,array(),true);
+	       	$this->render('index',array('sub_content' =>$sub_content));
+	}
 	
 	
 

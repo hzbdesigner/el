@@ -1,6 +1,6 @@
 
 
-	<div class="page-wrapper service">
+	<div class="page-wrapper contact">
 		<div class="nav-placeholder top"></div>
 		<div class="container service">
 			<div class="title"><img src="<?php echo Yii::app()->baseUrl; ?>/images/service-title.jpg" /></div>
@@ -9,8 +9,8 @@
 			<div class="sidebar">
 				<ul class="menus">
 
-					<li class="<?php if ($this->action->id == 'index') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/service/index'); ?>" >公司地址 </a><span> > </span></li>
-					<li class="<?php if ($this->action->id == 'baoyang') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/service/baoyang'); ?>" >联系电话</a><span> > </span></li>
+					<li class="<?php if ($this->action->id == 'index') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/contact/index'); ?>" >公司地址 </a><span> > </span></li>
+					<li class="<?php if ($this->action->id == 'quanguo') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/contact/quanguo'); ?>" >全国销点</a><span> > </span></li>
 				</ul>
 			</div>
 
