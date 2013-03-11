@@ -903,3 +903,178 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/js/custom.js
 HTTP_REFERER=http://localhost/apps/el/index.php/admin
 ---
+2013/03/10 15:45:09 [error] [exception.CException] exception 'CException' with message 'DefaultController cannot find the requested view "admin".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/DefaultController.php(13): CController->renderPartial('admin')
+#1 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): DefaultController->actionAdmin()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('admin')
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/a...')
+#7 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/apps/el/index.php/admin/default/admin
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/
+---
+2013/03/10 15:48:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('admin')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('admin')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/a...')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/admin/default/admin
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/
+---
+2013/03/10 15:48:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('admin')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('admin')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/a...')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/admin/default/admin
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/
+---
+2013/03/10 16:06:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('admin')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('admin')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/a...')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/admin/default/admin
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/
+---
+2013/03/10 16:06:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('admin')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('admin')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/a...')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/admin/default/admin
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/
+---
+2013/03/10 16:06:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('admin')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('admin')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/default/a...')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/admin/default/admin
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/
+---
+2013/03/10 16:13:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 16:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 16:14:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 16:15:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 16:15:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 16:16:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product/index".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product/index
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 16:17:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product/index".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product/index
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 16:17:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product/index".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product/index
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 16:19:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product/index".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product/index
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/10 16:21:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/admin/product/index".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/admin/pro...')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/admin/admin/product/index
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/11 02:04:45 [error] [exception.CException] exception 'CException' with message 'ActivityController cannot find the requested view "/site/history".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(35): CController->renderPartial('/site/history', Array, true)
+#1 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionHistory()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('history')
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/histor...')
+#7 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/apps/el/index.php/activity/history
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/online
+---

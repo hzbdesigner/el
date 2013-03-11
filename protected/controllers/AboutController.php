@@ -10,14 +10,14 @@ class AboutController extends Controller
 	//
 	 public function actionIndex()
 	{
-	    	$sub_content = $this->renderPartial('/site/comingsoon' ,array(),true);
+	    	$sub_content = $this->renderPartial('/about/brief' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 	//公司简介
 	 public function actionBrief()
 	{
 	    
-	       	$sub_content = $this->renderPartial('/site/comingsoon' ,array(),true);
+	       	$sub_content = $this->renderPartial('/about/brief' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 
@@ -25,7 +25,7 @@ class AboutController extends Controller
 	 public function actionCulture()
 	{
 	    
-	       	$sub_content = $this->renderPartial('/site/comingsoon' ,array(),true);
+	       	$sub_content = $this->renderPartial('/about/culture' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 
@@ -33,7 +33,7 @@ class AboutController extends Controller
 	 public function actionIdea()
 	{
 	    
-	       	$sub_content = $this->renderPartial('/site/comingsoon' ,array(),true);
+	       	$sub_content = $this->renderPartial('/about/idea' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 

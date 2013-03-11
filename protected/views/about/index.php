@@ -1,6 +1,6 @@
 
 
-	<div class="page-wrapper service">
+	<div class="page-wrapper about">
 		<div class="nav-placeholder top"></div>
 		<div class="container service">
 			<div class="title"><img src="<?php echo Yii::app()->baseUrl; ?>/images/about-title.png" /></div>

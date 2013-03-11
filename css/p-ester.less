@@ -178,8 +178,10 @@ html,body{background-color:#e8e8e8;height:100%;width:100%;}
 
 	//service css
 	//----------------------------
-	&.service{ background:url() 0 0 no-repeat;background-size:cover; }  //fullscreen bg
-	.container.service{.bgwhite;margin-top:50px;border-bottom:6px solid @gold;.clearfix;
+	&.service{ background:url(../images/brand-banner.jpg) 0 0 no-repeat;background-size:cover; }  //fullscreen bg
+	&.about{ background:url(../images/brand-banner.jpg) 0 0 no-repeat;background-size:cover; }  //fullscreen bg
+
+	.container.service,container.about{.bgwhite;margin-top:50px;border-bottom:6px solid @gold;.clearfix;
 		.sidebar{.fl;width:190px;margin-left:110px;.mt30;
 			li{height:36px;border-bottom:1px solid @gold;line-height:36px;.pl45;
 				a{color:@gold;.fs14;}
@@ -195,13 +197,13 @@ html,body{background-color:#e8e8e8;height:100%;width:100%;}
 				}
 			}
 		}
-		.right-content{.fl;.ml30;width:515px;.clearfix;background-color:@gold;height:350px;.mt30;
-			.des{width:175px;.fl;padding:15px;
-				h2{.fs14;line-height:28px;color:#fff;}
-				p{.fs12;line-height:18px;.mb10;text-indent:2em;color:#fff;}
+		.right-content{.fl;.ml30;width:515px;.clearfix;background-color:@gold;height:auto;.mt30;min-height:350px;
+			.des{width:185px;.fl;.pl10;.pt10;
+				h2{.fs16;line-height:28px;color:#fff;}
+				p{.fs12;line-height:18px;.mb10;text-indent:2em;color:#e6e6e6;}
 			}
-			.img{width:310px;.fl;
-				img{height:350px;width:310px;}
+			.img{width:310px;.fr;
+				img{height:353px;width:310px;}
 			}
 		}
 		.placeholder{width:100%;height:35px;clear:both;}

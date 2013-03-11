@@ -24,7 +24,7 @@ class ActivityController extends Controller
 	 public function actionOnline()
 	{
 	    
-	       	$sub_content = $this->renderPartial('/site/comingsoon' ,array(),true);
+	       	$sub_content = $this->renderPartial('/activity/online' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 
@@ -32,7 +32,7 @@ class ActivityController extends Controller
 	 public function actionHistory()
 	{
 	    
-	       	$sub_content = $this->renderPartial('/site/comingsoon' ,array(),true);
+	       	$sub_content = $this->renderPartial('/activity/history' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 
@@ -40,7 +40,7 @@ class ActivityController extends Controller
 	 public function actionCompany()
 	{
 	    
-	       	$sub_content = $this->renderPartial('/site/comingsoon' ,array(),true);
+	       	$sub_content = $this->renderPartial('/activity/Company' ,array(),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 	//内容
