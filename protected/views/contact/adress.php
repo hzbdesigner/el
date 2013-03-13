@@ -17,7 +17,7 @@
 	<p style="font-size:12px;color:#fff;line-height:16px;">
 		如果您在选购过程中希望得到我们的帮助，<br />
 		欢迎致电全国客服专线：<br />
-		400-606-0433<br />
+		400－6060－433<br />
 		010-53011000<br />
 		或者邮件我们获得更多咨讯：<br />
 		contact@elgds.com<br />
