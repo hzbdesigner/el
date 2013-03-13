@@ -10,7 +10,7 @@
 				</ul> -->
 
 			<div class="article">
-				<div class="title">活动新闻标题，活动新闻标题</div>
+				<div class="title"><?php echo $activity->atitle ; ?></div>
 				<div class="subtitle"></div>
 				<div class="content">
 					<p>活动内容，活动图片活动内容，活动图片活动内容，活动图片</p>

@@ -6,44 +6,44 @@ class ActivityController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout = 'main';
 
-	/**
-	 * @return array action filters
-	 */
-	public function filters()
-	{
-		return array(
-			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
-		);
-	}
+	// /**
+	//  * @return array action filters
+	//  */
+	// public function filters()
+	// {
+	// 	return array(
+	// 		'accessControl', // perform access control for CRUD operations
+	// 		'postOnly + delete', // we only allow deletion via POST request
+	// 	);
+	// }
 
-	/**
-	 * Specifies the access control rules.
-	 * This method is used by the 'accessControl' filter.
-	 * @return array access control rules
-	 */
-	public function accessRules()
-	{
-		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
-	}
+	// /**
+	//  * Specifies the access control rules.
+	//  * This method is used by the 'accessControl' filter.
+	//  * @return array access control rules
+	//  */
+	// public function accessRules()
+	// {
+	// 	return array(
+	// 		array('allow',  // allow all users to perform 'index' and 'view' actions
+	// 			'actions'=>array('index','view'),
+	// 			'users'=>array('*'),
+	// 		),
+	// 		array('allow', // allow authenticated user to perform 'create' and 'update' actions
+	// 			'actions'=>array('create','update'),
+	// 			'users'=>array('@'),
+	// 		),
+	// 		array('allow', // allow admin user to perform 'admin' and 'delete' actions
+	// 			'actions'=>array('admin','delete'),
+	// 			'users'=>array('admin'),
+	// 		),
+	// 		array('deny',  // deny all users
+	// 			'users'=>array('*'),
+	// 		),
+	// 	);
+	// }
 
 	/**
 	 * Displays a particular model.
@@ -56,27 +56,113 @@ class ActivityController extends Controller
 		));
 	}
 
+	
+
+	public function actionAdmin()
+	{
+		// $model=new Activity('search');
+		// $model->unsetAttributes();  // clear any default values
+		// if(isset($_GET['Activity']))
+		// 	$model->attributes=$_GET['Activity'];
+		//hxrx
+		// $current_page = isset( $_REQUEST['page'] )?$_REQUEST['page']:1;
+		// $param = array(
+		// 	'order'=>'aid desc',
+		// );
+
+		// $criteria = new CDbCriteria($param);
+		// $count = Activity::model()->count( $criteria);
+		// $pages = new CPagination( $count );
+		// $pages->pageSize = 20;
+		// $pages->applyLimit( $criteria );
+		// $page_num = ceil( $count/$pages->pageSize );
+		// $articles = Article::model()->findAll($crite
+		// 	'articles' => $articles,
+		// 	'pages' => $pages,
+		// 	'current_page' => $current_page,
+		// ));
+
+		//数据
+		$activitys = Activity::model()->findAll();
+
+		//渲染
+		$sub_content=$this->renderPartial('admin',array(
+			'activitys'=>$activitys
+			// 'atype'=>$atype,
+			),true);
+		$this->render('index',array(
+			'sub_content'=>$sub_content,
+			//'current_page' => $current_page,
+			));
+
+	}
 	/**
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
+	//hxrs
+	// public function actionCreate()
+
+	// {	//creat 页面出现有两种情况：一个是去新建，另外一个新建失败返回这个页面~
+	// 	$model=new Article;
+
+	// 	// Uncomment the following line if AJAX validation is needed
+	// 	// $this->performAjaxValidation($model);
+	// 	$error = '';
+	// 	//$_post[Article]是什么鬼东西~~~？？？article是参数之一吧~~
+	// 	if(isset($_POST['Article']))
+	// 	{
+	// 		//print_r( $_POST );
+	// 		//exit; 
+	// 		$model->attributes=$_POST['Article'];
+	// 		$model->uid = Yii::app()->user->id;
+
+	// 		if($model->save()){
+	// 			$this->redirect(array('admin','id'=>$model->aid));
+	// 		}else{
+	// 			$error = '请正确填写文章标题、分类、正文~！';
+	// 		}
+	// 	}
+	// 	$catalogs = Catalog::model()->findAll();
+	// 	$this->render('create',array(
+	// 		'catalogs'=>$catalogs,
+	// 		'model'=>$model,
+	// 		'error'=>$error,
+	// 	));
+	// }
+
 	public function actionCreate()
 	{
 		$model=new Activity;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
+		$error = '';
+		// // Uncomment the following line if AJAX validation is needed
+		// // $this->performAjaxValidation($model);
+		echo "运行到1";
 		if(isset($_POST['Activity']))
 		{
+			echo "运行到2";
 			$model->attributes=$_POST['Activity'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->aid));
+			
+			echo $model->atitle;
+			if($model->save()){echo 'true';}else{echo 'false';}  //save（）函数报错
+			$model->save();
+
+			// if($model->save()){
+			// 	$this->redirect(array('admin','aid'=>$model->aid));
+
+			// }else{
+			// 	$error = '请正确填写文章标题、分类、正文~！';
+			// }
 		}
 
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		$types=Atype::model()->findAll();
+		$sub_content=$this->renderPartial('create',array(
+			'types'=>$types,
+			'error'=>$error,
+		),true);
+
+		$this->render('index',array('sub_content'=>$sub_content));
+		
 	}
 
 	/**
@@ -120,28 +206,18 @@ class ActivityController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Activity');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
-	}
+	// public function actionIndex()
+	// {
+	// 	$dataProvider=new CActiveDataProvider('Activity');
+	// 	$this->render('index',array(
+	// 		'dataProvider'=>$dataProvider,
+	// 	));
+	// }
 
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
-	{
-		$model=new Activity('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Activity']))
-			$model->attributes=$_GET['Activity'];
 
-		$this->render('admin',array(
-			'model'=>$model,
-		));
-	}
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
