@@ -10,75 +10,63 @@
 </div>
 
 
-<div id="slides">
-			<div class="slides_container">
-				
-				<div class="slide">
-					<div class="item">
-						<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
-						<div class="content">
-							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
-							<div class="des">新闻简介新闻简介</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
-						<div class="content">
-							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
-							<div class="des">新闻简介新闻简介</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
-						<div class="content">
-							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
-							<div class="des">新闻简介新闻简介</div>
-						</div>
-					</div>
+<div class="image_carousel">
+		<div id="foo2">
+			<div class="item">
+				<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
+				<div class="content">
+					<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+					<div class="des">新闻简介新闻简介</div>
 				</div>
-				
-				<div class="slide">
-					<div class="item">
-						<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
-						<div class="content">
-							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
-							<div class="des">新闻简介新闻简介</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
-						<div class="content">
-							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
-							<div class="des">新闻简介新闻简介</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
-						<div class="content">
-							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
-							<div class="des">新闻简介新闻简介</div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="slide">
-					<div class="item">
-						<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
-						<div class="content">
-							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
-							<div class="des">新闻简介新闻简介</div>
-						</div>
-					</div>
-					<div class="item">
-						<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
-						<div class="content">
-							<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
-							<div class="des">新闻简介新闻简介</div>
-						</div>
-					</div>
-				</div>
-				
 			</div>
+			<div class="item">
+				<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
+				<div class="content">
+					<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+					<div class="des">新闻简介新闻简介</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
+				<div class="content">
+					<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+					<div class="des">新闻简介新闻简介</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
+				<div class="content">
+					<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+					<div class="des">新闻简介新闻简介</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
+				<div class="content">
+					<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+					<div class="des">新闻简介新闻简介</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="title"><a href="<?php echo $this->createUrl('/activity/view') ; ?>">新闻标题，新闻标题，新闻标题</a></div>
+				<div class="content">
+					<div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/news-img.png"></div>
+					<div class="des">新闻简介新闻简介</div>
+				</div>
+			</div>
+	
 		</div>
-		<div class="bottom-img"></div>
-		<div class="left-img"></div>
+		 <div class="clearfix"></div>
+
+    <a class="prev" id="foo2_prev" href="#"><span>prev</span></a>
+
+    <a class="next" id="foo2_next" href="#"><span>next</span></a>
+
+    <div class="pagination" id="foo2_pag"></div>
+
+				
+				
+</div>
+
+<div class="bottom-img"></div>
+<div class="left-img"></div>

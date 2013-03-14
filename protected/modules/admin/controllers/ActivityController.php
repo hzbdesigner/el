@@ -70,7 +70,7 @@ class ActivityController extends Controller
 		//记录总数
 		$count = Activity::model()->count( $criteria);
 		$pages = new CPagination( $count );
-		$pages->pageSize = 3;
+		$pages->pageSize = 20;
 		$pages->applyLimit( $criteria );
 		$page_num = ceil( $count/$pages->pageSize );
 

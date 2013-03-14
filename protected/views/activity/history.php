@@ -80,5 +80,3 @@
 				
 			</div>
 		</div>
-		<div class="bottom-img"></div>
-		<div class="left-img"></div>

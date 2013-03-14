@@ -17,10 +17,15 @@ class ActivityController extends Controller
 	}
 	//在线活动
 	 public function actionAll()
-	{		$activitys=Activity::model()->findAll();
-	    
-	       	$sub_content = $this->renderPartial('/activity/all' ,array('activitys'=>$activitys),true);
-	       	$this->render('index',array('sub_content' =>$sub_content));
+	{		$param = array(
+			'order'=>'aid desc',
+		);
+		$criteria = new CDbCriteria($param);
+		$activitys=Activity::model()->findAll($param);
+		$count = Activity::model()->count();
+		echo $count;
+       	$sub_content = $this->renderPartial('/activity/all' ,array('activitys'=>$activitys,'count'=>$count),true);
+       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 	//在线活动
 	 public function actionOnline()

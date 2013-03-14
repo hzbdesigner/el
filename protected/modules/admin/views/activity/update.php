@@ -41,6 +41,18 @@ EOD;
 					?>
 				</div>
 			</div>
+			<div class="control-group">
+				<label class="control-label">描述</label>
+				<div class="controls">
+					<textarea rows="3" class="span5" name='Activity[ades]'><?php echo $model->ades ; ?></textarea>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label">图片</label>
+				<div class="controls">
+					<input type="file" name="pic" name='Activity[apic]' value='<?php echo $model->apic ; ?>'/>
+				</div>
+			</div>
 
 			<div class="control-group">
 				<label class="control-label" for="inputEmail">
