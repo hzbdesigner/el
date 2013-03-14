@@ -1,5 +1,5 @@
 
-<div class="img view"><img src="<?php echo Yii::app()->baseUrl; ?>/images/henredon.jpg" /></div>
+<div class="img view"><img src="<?php echo Yii::app()->baseUrl; ?>/images/logo-henredon.jpg" /></div>
 <div class="des">
 1945年，四个有志青年一起来到了北卡罗莱纳州摩根敦，他们心怀理想，决心打造定制家具的王牌。60年的风雨历程充满了艰辛，最初，Henredon的产品线仅仅包含在了三个集装箱里，但它凭借坚实的品质，迅速为人传道，并迅速将它的设计和产品，植入到了成千上万的家庭里。
 </div>

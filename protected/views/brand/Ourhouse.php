@@ -1,5 +1,5 @@
 
-<div class="img view"><img src="<?php echo Yii::app()->baseUrl; ?>/images/ourhouse.jpg" /></div>
+<div class="img view"><img src="<?php echo Yii::app()->baseUrl; ?>/images/logo-ourhouse.jpg" /></div>
 <div class="des">
 Ourhouse坐落于马里兰州蒙哥马利县一个140英亩的农场里。那时候16个年轻男子和两个学员住在一个房间。同时宿舍里也配有一个教室计算机室、餐厅、厨房、洗衣设施和娱乐室。 
 </div>
