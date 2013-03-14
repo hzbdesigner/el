@@ -134,23 +134,30 @@ class ActivityController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($id)
-	{
-		$model=$this->loadModel($id);
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
+	public function actionUpdate($aid)
+	{	
+
+		 $model=$this->loadModel($aid);
 
 		if(isset($_POST['Activity']))
 		{
 			$model->attributes=$_POST['Activity'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->aid));
+			if($model->save()){
+				$this->redirect(array('admin'));
+			}
 		}
 
-		$this->render('update',array(
+
+		$types=Atype::model()->findAll();
+
+		$sub_content=$this->renderPartial('update',array(
+			'types'=>$types,
 			'model'=>$model,
-		));
+		),true);
+
+
+		$this->render('index',array('sub_content'=>$sub_content));
 	}
 
 	/**
@@ -158,13 +165,13 @@ class ActivityController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($id)
+	public function actionDelete($aid)
 	{
-		$this->loadModel($id)->delete();
-
+		$this->loadModel($aid)->delete();
+		$this->redirect(array('admin'));
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		// if(!isset($_GET['ajax']))
+		// 	$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
 	/**
@@ -188,9 +195,9 @@ class ActivityController extends Controller
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer the ID of the model to be loaded
 	 */
-	public function loadModel($id)
+	public function loadModel($aid)
 	{
-		$model=Activity::model()->findByPk($id);
+		$model=Activity::model()->findByPk($aid);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

@@ -3762,3 +3762,816 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/admin/activity/create
 HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/create
 ---
+2013/03/14 05:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('<')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/%3C?php%20echo%20Yii::app()-%3EbaseUrl;%20?%3E/images/news-img.png?1363236287890
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/14 05:44:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('<')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/%3C?php%20echo%20Yii::app()-%3EbaseUrl;%20?%3E/images/news-img.png
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/14 05:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('<')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/%3C?php%20echo%20Yii::app()-%3EbaseUrl;%20?%3E/images/news-img.png?1363236296258
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/14 05:45:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('<')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/%3C?php%20echo%20Yii::app()-%3EbaseUrl;%20?%3E/images/news-img.png
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/14 05:45:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('<')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/%3C?php%20echo%20Yii::app()-%3EbaseUrl;%20?%3E/images/news-img.png?1363236317640
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/14 05:47:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "amdin/activity".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('amdin/activity')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/amdin/activity
+---
+2013/03/14 05:47:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "amdin".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('amdin')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/amdin/
+---
+2013/03/14 05:47:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "amdin".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('amdin')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/amdin/
+---
+2013/03/14 05:47:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('delete')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/delete')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/delete?aid=16
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 05:47:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('delete')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/delete')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/delete?aid=16
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 05:49:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('delete')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/delete')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/delete?aid=16
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 05:49:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('delete')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/delete')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/delete?aid=16
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 05:49:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('delete')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/delete')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/delete?aid=16
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 05:49:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('delete')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/delete')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/delete?aid=16
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 05:52:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('delete')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/delete')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/delete?aid=16
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 05:53:46 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:164) (/Applications/MAMP/htdocs/apps/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(165): ActivityController->redirect()
+#1 unknown(0): ActivityController->actionDelete()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/16
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (165)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 05:55:22 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:164) (/Applications/MAMP/htdocs/apps/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(165): ActivityController->redirect()
+#1 unknown(0): ActivityController->actionDelete()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/15
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (165)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 05:57:20 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:164) (/Applications/MAMP/htdocs/apps/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(165): ActivityController->redirect()
+#1 unknown(0): ActivityController->actionDelete()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/17
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (165)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 05:59:07 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:164) (/Applications/MAMP/htdocs/apps/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(165): ActivityController->redirect()
+#1 unknown(0): ActivityController->actionDelete()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/14
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (165)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 06:00:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:196
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(163): ActivityController->loadModel('13')
+#1 [internal function]: ActivityController->actionDelete('13')
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ActivityController), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ActivityController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/activity/...')
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/13
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 06:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:196
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(163): ActivityController->loadModel('13')
+#1 [internal function]: ActivityController->actionDelete('13')
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ActivityController), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ActivityController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/activity/...')
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/13
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 06:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:196
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(163): ActivityController->loadModel('13')
+#1 [internal function]: ActivityController->actionDelete('13')
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ActivityController), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ActivityController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/activity/...')
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/13
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 06:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:196
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(163): ActivityController->loadModel('13')
+#1 [internal function]: ActivityController->actionDelete('13')
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ActivityController), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ActivityController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/activity/...')
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/13
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 06:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:196
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(163): ActivityController->loadModel('13')
+#1 [internal function]: ActivityController->actionDelete('13')
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ActivityController), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ActivityController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/activity/...')
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/13
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 06:00:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:196
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(163): ActivityController->loadModel('13')
+#1 [internal function]: ActivityController->actionDelete('13')
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ActivityController), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ActivityController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/activity/...')
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/13
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 06:00:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:196
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(163): ActivityController->loadModel('13')
+#1 [internal function]: ActivityController->actionDelete('13')
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ActivityController), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ActivityController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('delete')
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/activity/...')
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/13
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 06:01:01 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:164) (/Applications/MAMP/htdocs/apps/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(165): ActivityController->redirect()
+#1 unknown(0): ActivityController->actionDelete()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/delete/aid/12
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (165)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 06:13:08 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:157)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (157)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 06:14:01 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php:10)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(157): ActivityController->renderPartial()
+#2 unknown(0): ActivityController->actionUpdate()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php (10)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (157)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 06:14:04 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php:10)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(157): ActivityController->renderPartial()
+#2 unknown(0): ActivityController->actionUpdate()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php (10)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (157)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 06:15:01 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:160)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (160)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 06:15:05 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:160)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (160)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:19:28 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:159)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (159)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:19:34 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:159)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (159)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:21:43 [error] [exception.CException] exception 'CException' with message 'ActivityController cannot find the requested view "/admin/activity/update".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(157): CController->renderPartial('/admin/activity...', Array, true)
+#1 [internal function]: ActivityController->actionUpdate('7')
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ActivityController), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ActivityController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('update')
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/activity/...')
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 07:22:21 [error] [exception.CException] exception 'CException' with message 'ActivityController cannot find the requested view "/admin/activity/update".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:879
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(158): CController->renderPartial('/admin/activity...', Array, true)
+#1 [internal function]: ActivityController->actionUpdate('7')
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ActivityController), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ActivityController), Object(ReflectionMethod), Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('update')
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/activity/...')
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+HTTP_REFERER=http://localhost/apps/el/index.php/admin/activity/admin
+---
+2013/03/14 07:24:12 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/create.php:10)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(158): ActivityController->renderPartial()
+#2 unknown(0): ActivityController->actionUpdate()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/create.php (10)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (158)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:24:15 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/create.php:10)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(158): ActivityController->renderPartial()
+#2 unknown(0): ActivityController->actionUpdate()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/create.php (10)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (158)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:27:46 [error] [php] Undefined variable: aid (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:141)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (141)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:27:47 [error] [php] Undefined variable: aid (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:141)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (141)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:27:47 [error] [php] Undefined variable: aid (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:141)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (141)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:33:05 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:35 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:36 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:36 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:37 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:37 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:37 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:38 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:38 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:38 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:40 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:34:40 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:161)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (161)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:42:56 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php:10)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(157): ActivityController->renderPartial()
+#2 unknown(0): ActivityController->actionUpdate()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php (10)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (157)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:44:24 [error] [php] Use of undefined constant aid - assumed 'aid' (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php:10)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(157): ActivityController->renderPartial()
+#2 unknown(0): ActivityController->actionUpdate()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php (10)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (157)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 07:52:44 [error] [php] Use of undefined constant acontent - assumed 'acontent' (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php:42)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(157): ActivityController->renderPartial()
+#2 unknown(0): ActivityController->actionUpdate()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/21
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php (42)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (157)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 08:04:48 [error] [php] Use of undefined constant tid - assumed 'tid' (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php:24)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(157): ActivityController->renderPartial()
+#2 unknown(0): ActivityController->actionUpdate()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/21
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php (24)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (157)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 08:04:50 [error] [php] Use of undefined constant tid - assumed 'tid' (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php:24)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(157): ActivityController->renderPartial()
+#2 unknown(0): ActivityController->actionUpdate()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/update/aid/21
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/activity/update.php (24)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (157)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/14 08:08:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('<')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/%3C?php%20echo%20Yii::app()-%3EbaseUrl;%20?%3E/images/news-img.png?1363244898790
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/14 08:08:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "<".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('<')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/%3C?php%20echo%20Yii::app()-%3EbaseUrl;%20?%3E/images/news-img.png
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
