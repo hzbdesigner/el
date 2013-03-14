@@ -60,39 +60,31 @@ class ActivityController extends Controller
 
 	public function actionAdmin()
 	{
-		// $model=new Activity('search');
-		// $model->unsetAttributes();  // clear any default values
-		// if(isset($_GET['Activity']))
-		// 	$model->attributes=$_GET['Activity'];
-		//hxrx
-		// $current_page = isset( $_REQUEST['page'] )?$_REQUEST['page']:1;
-		// $param = array(
-		// 	'order'=>'aid desc',
-		// );
-
-		// $criteria = new CDbCriteria($param);
-		// $count = Activity::model()->count( $criteria);
-		// $pages = new CPagination( $count );
-		// $pages->pageSize = 20;
-		// $pages->applyLimit( $criteria );
-		// $page_num = ceil( $count/$pages->pageSize );
-		// $articles = Article::model()->findAll($crite
-		// 	'articles' => $articles,
-		// 	'pages' => $pages,
-		// 	'current_page' => $current_page,
-		// ));
+		
+		$current_page = isset( $_REQUEST['page'] )?$_REQUEST['page']:1;
+		$param = array(
+			'order'=>'aid desc',
+		);
+		//页码代码写在lists的action中~~~
+		$criteria = new CDbCriteria($param);
+		//记录总数
+		$count = Activity::model()->count( $criteria);
+		$pages = new CPagination( $count );
+		$pages->pageSize = 3;
+		$pages->applyLimit( $criteria );
+		$page_num = ceil( $count/$pages->pageSize );
 
 		//数据
-		$activitys = Activity::model()->findAll();
-
-		//渲染
+		$activitys = Activity::model()->findAll($criteria);
+		//$activitys = Activity::model()->findAll();
+		// //渲染
 		$sub_content=$this->renderPartial('admin',array(
-			'activitys'=>$activitys
-			// 'atype'=>$atype,
+			'activitys'=>$activitys,
+			'pages' => $pages,
+			'current_page' => $current_page,
 			),true);
 		$this->render('index',array(
 			'sub_content'=>$sub_content,
-			//'current_page' => $current_page,
 			));
 
 	}
