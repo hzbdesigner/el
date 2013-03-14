@@ -100,59 +100,23 @@ class ActivityController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	//hxrs
-	// public function actionCreate()
-
-	// {	//creat 页面出现有两种情况：一个是去新建，另外一个新建失败返回这个页面~
-	// 	$model=new Article;
-
-	// 	// Uncomment the following line if AJAX validation is needed
-	// 	// $this->performAjaxValidation($model);
-	// 	$error = '';
-	// 	//$_post[Article]是什么鬼东西~~~？？？article是参数之一吧~~
-	// 	if(isset($_POST['Article']))
-	// 	{
-	// 		//print_r( $_POST );
-	// 		//exit; 
-	// 		$model->attributes=$_POST['Article'];
-	// 		$model->uid = Yii::app()->user->id;
-
-	// 		if($model->save()){
-	// 			$this->redirect(array('admin','id'=>$model->aid));
-	// 		}else{
-	// 			$error = '请正确填写文章标题、分类、正文~！';
-	// 		}
-	// 	}
-	// 	$catalogs = Catalog::model()->findAll();
-	// 	$this->render('create',array(
-	// 		'catalogs'=>$catalogs,
-	// 		'model'=>$model,
-	// 		'error'=>$error,
-	// 	));
-	// }
-
+	
 	public function actionCreate()
 	{
 		$model=new Activity;
 		$error = '';
 		// // Uncomment the following line if AJAX validation is needed
 		// // $this->performAjaxValidation($model);
-		echo "运行到1";
 		if(isset($_POST['Activity']))
 		{
-			echo "运行到2";
 			$model->attributes=$_POST['Activity'];
-			
-			echo $model->atitle;
-			if($model->save()){echo 'true';}else{echo 'false';}  //save（）函数报错
-			$model->save();
 
-			// if($model->save()){
-			// 	$this->redirect(array('admin','aid'=>$model->aid));
+			if($model->save()){
+				$this->redirect(array('admin'));
 
-			// }else{
-			// 	$error = '请正确填写文章标题、分类、正文~！';
-			// }
+			}else{
+				$error = '请正确填写文章标题、分类、正文~！';
+			}
 		}
 
 		$types=Atype::model()->findAll();

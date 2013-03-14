@@ -19,14 +19,18 @@
 									$atype=Atype::model()->findByPk($tid);
 									$aid=$activity->aid;
 									$url=$this->createUrl('/activity/view',array('aid'=>$aid));
+									$delete_url=$this->createUrl('/activity/delete',array('aid'=>$aid));
 									echo <<<EOD
 										<tr>
 											<td>$aid</td>
 											<td>$atype[ttitle]</td>
 											<td><a href="$url">$activity[atitle]</a></td>
 											<td>内容，内容内容，内容内容，内容</td>
-											<td>属性</td>
-											<td> <a href="#">删除</a></a> <span class="divider">/</span> <a href="#">修改</a> </td>
+											<td> 
+											<a href="">删除</a></a> 
+												<span class="divider">/</span> 
+												<a href="#">修改</a> 
+											</td>
 										</tr>
 EOD;
 								}

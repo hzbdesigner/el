@@ -54,7 +54,7 @@ class Atype extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'activities' => array(self::HAS_MANY, 'Activity', 'tid'),
+			// 'activities' => array(self::HAS_MANY, 'Activity', 'tid'),
 		);
 	}
 
