@@ -10,7 +10,7 @@
 				<ul class="menus">
 
 					<li class="<?php if ($this->action->id == 'index') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/contact/index'); ?>" >公司地址 </a><span> > </span></li>
-					<li class="<?php if ($this->action->id == 'quanguo') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/contact/quanguo'); ?>" >全国销点</a><span> > </span></li>
+					<li class="<?php if ($this->action->id == 'quanguo') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/contact/quanguo'); ?>" >全国网点</a><span> > </span></li>
 				</ul>
 			</div>
 
