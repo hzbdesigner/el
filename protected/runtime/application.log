@@ -5815,3 +5815,471 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
 HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
 ---
+2013/03/15 17:24:02 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.tid" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/schema/CDbCriteria.php(161): CComponent->__set('tid', '3')
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(60): CDbCriteria->__construct(Array)
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionCompany()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('company')
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/compan...')
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/apps/el/index.php/activity/company
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/history
+---
+2013/03/15 17:27:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:27:14 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.tid" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/schema/CDbCriteria.php(161): CComponent->__set('tid', '2')
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(35): CDbCriteria->__construct(Array)
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('online')
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/online')
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/apps/el/index.php/activity/online
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:27:19 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.tid" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/schema/CDbCriteria.php(161): CComponent->__set('tid', '2')
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(35): CDbCriteria->__construct(Array)
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('online')
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/online')
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/apps/el/index.php/activity/online
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:27:19 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.tid" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/schema/CDbCriteria.php(161): CComponent->__set('tid', '2')
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(35): CDbCriteria->__construct(Array)
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('online')
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/online')
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/apps/el/index.php/activity/online
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:27:19 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.tid" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:174
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/schema/CDbCriteria.php(161): CComponent->__set('tid', '2')
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(35): CDbCriteria->__construct(Array)
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('online')
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/online')
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/apps/el/index.php/activity/online
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:53:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:53:17 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(37): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/online
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (37)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:55:26 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/history.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(51): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionHistory()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/history
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/history.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (51)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:57:19 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(39): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/online
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (39)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:57:43 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(39): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/online
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (39)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:58:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 17:58:51 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/Company.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(66): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionCompany()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/company
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/Company.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (66)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 17:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 17:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 17:58:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 17:58:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 17:58:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:59:00 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(39): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/online
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (39)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:59:28 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(39): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/online
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (39)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:59:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 17:59:33 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(39): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/online
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (39)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 18:02:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 18:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 18:03:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 18:03:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 18:03:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 18:03:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 18:03:43 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(39): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/online
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (39)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 18:03:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 18:04:01 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/Company.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(66): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionCompany()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/company
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/Company.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (66)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 18:04:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 18:04:11 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/Company.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(66): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionCompany()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/company
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/Company.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (66)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 18:04:16 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/Company.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(66): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionCompany()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/company
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/Company.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (66)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 18:06:04 [error] [php] Invalid argument supplied for foreach() (/Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php:17)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ActivityController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(39): ActivityController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionOnline()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#8 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#9 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/activity/online
+in /Applications/MAMP/htdocs/apps/el/protected/views/activity/online.php (17)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php (39)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
