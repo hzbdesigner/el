@@ -3,7 +3,7 @@
 	<div class="page-wrapper contact">
 		<div class="nav-placeholder top"></div>
 		<div class="container service">
-			<div class="title"><img src="<?php echo Yii::app()->baseUrl; ?>/images/service-title.jpg" /></div>
+			<div class="title"><img src="<?php echo Yii::app()->baseUrl; ?>/images/title-contact.png" /></div>
 
 			<!--sidebar-->
 			<div class="sidebar">
