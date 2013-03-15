@@ -5496,3 +5496,322 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
 HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
 ---
+2013/03/15 09:51:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 15:19:59 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:138)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (138)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:20:03 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:138)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (138)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:38:13 [error] [php] Array to string conversion (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:40:02 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:42:11 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:43:02 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:43:46 [error] [php] Undefined index: file (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:47:16 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:47:23 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:47:25 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:47:31 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:48:52 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:51:31 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:51:35 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:52:26 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:53:14 [error] [php] Undefined index: Activity[apic] (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 15:55:10 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:103)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (103)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 16:05:55 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 16:14:03 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 16:14:09 [error] [php] Undefined index: apic (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:102)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (102)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:04:27 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:101) (/Applications/MAMP/htdocs/apps/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(128): ActivityController->redirect()
+#1 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionCreate()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (128)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:07:15 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php:106) (/Applications/MAMP/htdocs/apps/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php(128): ActivityController->redirect()
+#1 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionCreate()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ActivityController->runAction()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ActivityController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ActivityController->run()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/activity/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ActivityController.php (128)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/15 17:07:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 17:12:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/apps/el/index.php/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity
+---
+2013/03/15 17:12:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/15 17:12:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---

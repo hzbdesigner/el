@@ -11,7 +11,7 @@
 			echo "<div class='alert alert-error'><button type='button' class='close' data-dismiss='alert'>×</button>$error</div>";
 		}
 	?>
-	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/activity/create')?>" method='POST'>
+	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/activity/create')?>" method='POST' enctype="multipart/form-data" >
 		<fieldset>
 			<legend>新建活动</legend>
 			<div class="control-group">
@@ -44,7 +44,7 @@ EOD;
 			<div class="control-group">
 				<label class="control-label">图片</label>
 				<div class="controls">
-					<input type="file"  name='Activity[apic]'/>
+					<input type="file"  name="apic"/>
 				</div>
 			</div>
 

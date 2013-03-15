@@ -92,34 +92,97 @@ class ActivityController extends Controller
 	 * Creates a new model.
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
-	
 	public function actionCreate()
 	{
-		$model=new Activity;
+		$msg = false;
 		$error = '';
-		// // Uncomment the following line if AJAX validation is needed
-		// // $this->performAjaxValidation($model);
 		if(isset($_POST['Activity']))
-		{
-			$model->attributes=$_POST['Activity'];
+		{	
+			// echo "1";
+			// echo "Upload: " . $_FILES["apic"]["name"] . "<br />";
+   // 			echo "Type: " . $_FILES["apic"]["type"] . "<br />";
+		 //    echo "Size: " . ($_FILES["apic"]["size"] / 1024) . " Kb<br />";
+		 //    echo "Stored in: " . $_FILES["apic"]["tmp_name"] . "<br />";
+		    // if(empty($_FILES)){ echo "是空的";}else{echo "不是空的";}
+			if (!empty($_FILES)){ 
+				
+				$fileTypes = array('jpg','jpeg','gif','png'); // File extensions
+				$fileParts = pathinfo($_FILES['apic']['name']);
+				$ext = strtolower( $fileParts['extension'] ); //文件类型转为小写~~
+				
+				if ( in_array( $ext ,$fileTypes ) ){   //是否在这个数组中？？
+					
+					$file_name = 'apic_'.time().rand(0,999).'.'.$ext;//文件命名，重新名一个名
+					$apic_file_path =  Yii::app()->basePath.'/../images/upload/'.$file_name;//设置存储路径（包括自己的名字）
+					move_uploaded_file( $_FILES['apic']['tmp_name'] , $apic_file_path);  //拷贝副本，将副本文件存储到新的位置。
+					
+					$_POST['Activity']['apic'] = 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/images/upload/'.$file_name;
+					
+					
+					if( $_POST['Activity']['atitle'] ){
+						
+						$model=new Activity;
+						$model->attributes=$_POST['Activity'];
+						if($model->save()){
+							
+							$this->redirect(array('admin'));
+						}else{
+							$msg = '保存失败！'; //如果没有保存到数据库的话
+							$error = '请正确填写文章标题、分类、正文~！';
 
-			if($model->save()){
-				$this->redirect(array('admin'));
-
+						}
+					}else{
+						$msg = '请填写名称！'; //Activity对象没有name属性的话
+					}
+				}else{
+					$msg = '请上传 png/jpg/gif 格式的图片LOGO';//如果上传的文件格式不对的话
+				}
 			}else{
-				$error = '请正确填写文章标题、分类、正文~！';
-			}
+				$msg = '请上传头像图片'; //如果$_file为空的话
+			}	
 		}
-
+		
+		//数据存储完毕
 		$types=Atype::model()->findAll();
 		$sub_content=$this->renderPartial('create',array(
 			'types'=>$types,
 			'error'=>$error,
+			// 'model'=>$model,
+			'msg'=>$msg,
 		),true);
 
 		$this->render('index',array('sub_content'=>$sub_content));
 		
 	}
+	
+	// public function actionCreate()
+	// {
+	// 	$model=new Activity;
+	// 	$error = '';
+	// 	$msg = false;
+	// 	// // Uncomment the following line if AJAX validation is needed
+	// 	// // $this->performAjaxValidation($model);
+	// 	if(isset($_POST['Activity']))
+	// 	{
+	// 		$model->attributes=$_POST['Activity'];
+
+	// 		if($model->save()){
+	// 			$this->redirect(array('admin'));
+
+	// 		}else{
+	// 			$error = '请正确填写文章标题、分类、正文~！';
+	// 		}
+	// 	}
+
+	// 	$types=Atype::model()->findAll();
+	// 	$sub_content=$this->renderPartial('create',array(
+	// 		'types'=>$types,
+	// 		'error'=>$error,
+	// 	),true);
+
+	// 	$this->render('index',array('sub_content'=>$sub_content));
+		
+	// }
 
 	/**
 	 * Updates a particular model.
