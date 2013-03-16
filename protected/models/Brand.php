@@ -43,7 +43,7 @@ class Brand extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('btitle, bdes, bbanner, bsubbanner, bcontent', 'required'),
+			array('btitle', 'required'),
 			array('btitle', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -59,8 +59,8 @@ class Brand extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'b' => array(self::BELONGS_TO, 'Product', 'bid'),
-			'products' => array(self::HAS_MANY, 'Product', 'bid'),
+			// 'b' => array(self::BELONGS_TO, 'Product', 'bid'),
+			// 'products' => array(self::HAS_MANY, 'Product', 'bid'),
 		);
 	}
 
@@ -74,8 +74,6 @@ class Brand extends CActiveRecord
 			'btitle' => 'Btitle',
 			'bdes' => 'Bdes',
 			'bbanner' => 'Bbanner',
-			'bsubbanner' => 'Bsubbanner',
-			'bcontent' => 'Bcontent',
 		);
 	}
 

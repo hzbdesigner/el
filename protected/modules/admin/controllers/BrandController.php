@@ -6,44 +6,44 @@ class BrandController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/column2';
+	public $layout='main';
 
 	/**
 	 * @return array action filters
 	 */
-	public function filters()
-	{
-		return array(
-			'accessControl', // perform access control for CRUD operations
-			'postOnly + delete', // we only allow deletion via POST request
-		);
-	}
+	// public function filters()
+	// {
+	// 	return array(
+	// 		'accessControl', // perform access control for CRUD operations
+	// 		'postOnly + delete', // we only allow deletion via POST request
+	// 	);
+	// }
 
-	/**
-	 * Specifies the access control rules.
-	 * This method is used by the 'accessControl' filter.
-	 * @return array access control rules
-	 */
-	public function accessRules()
-	{
-		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
-		);
-	}
+	// /**
+	//  * Specifies the access control rules.
+	//  * This method is used by the 'accessControl' filter.
+	//  * @return array access control rules
+	//  */
+	// public function accessRules()
+	// {
+	// 	return array(
+	// 		array('allow',  // allow all users to perform 'index' and 'view' actions
+	// 			'actions'=>array('index','view'),
+	// 			'users'=>array('*'),
+	// 		),
+	// 		array('allow', // allow authenticated user to perform 'create' and 'update' actions
+	// 			'actions'=>array('create','update'),
+	// 			'users'=>array('@'),
+	// 		),
+	// 		array('allow', // allow admin user to perform 'admin' and 'delete' actions
+	// 			'actions'=>array('admin','delete'),
+	// 			'users'=>array('admin'),
+	// 		),
+	// 		array('deny',  // deny all users
+	// 			'users'=>array('*'),
+	// 		),
+	// 	);
+	// }
 
 	/**
 	 * Displays a particular model.
@@ -62,21 +62,29 @@ class BrandController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Brand;
 
+			if( $_POST['Brand'] ){
+
+				$model=new Brand;
+				$model->attributes=$_POST['Brand'];
+				if($model->save()){
+					
+					$this->redirect(array('admin'));
+				}else{
+					$error = '请正确填写文章标题、分类、正文~！';
+				}
+			}
+		
+		$sub_content=$this->renderPartial('create',array(
+			
+			),true);
+		$this->render('index',array(
+			'sub_content'=>$sub_content,
+			));
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Brand']))
-		{
-			$model->attributes=$_POST['Brand'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->bid));
-		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		
 	}
 
 	/**
@@ -84,9 +92,9 @@ class BrandController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate($id)
+	public function actionUpdate($bid)
 	{
-		$model=$this->loadModel($id);
+		$model=$this->loadModel($bid);
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -95,12 +103,15 @@ class BrandController extends Controller
 		{
 			$model->attributes=$_POST['Brand'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->bid));
+				$this->redirect(array('admin'));
 		}
 
-		$this->render('update',array(
-			'model'=>$model,
-		));
+		$sub_content=$this->renderPartial('update',array(
+			'model'=>$model
+			),true);
+		$this->render('index',array(
+			'sub_content'=>$sub_content,
+			));
 	}
 
 	/**
@@ -108,13 +119,10 @@ class BrandController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($id)
+	public function actionDelete($bid)
 	{
-		$this->loadModel($id)->delete();
-
-		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-		if(!isset($_GET['ajax']))
-			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		$this->loadModel($bid)->delete();
+		$this->redirect(array('admin'));
 	}
 
 	/**
@@ -133,14 +141,23 @@ class BrandController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Brand('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Brand']))
-			$model->attributes=$_GET['Brand'];
 
-		$this->render('admin',array(
-			'model'=>$model,
-		));
+		$param = array(
+			'order'=>'bid desc',
+		);
+		//页码代码写在lists的action中~~~
+		$criteria = new CDbCriteria($param);
+
+		//数据
+		$brands = Brand::model()->findAll($criteria);
+		//$brands = brand::model()->findAll();
+		// //渲染
+		$sub_content=$this->renderPartial('admin',array(
+			'brands'=>$brands,
+			),true);
+		$this->render('index',array(
+			'sub_content'=>$sub_content,
+			));
 	}
 
 	/**

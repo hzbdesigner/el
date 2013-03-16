@@ -56,7 +56,7 @@
 				    <a class="brand" href="<?php echo $this->createUrl('/site') ;?>">东方传奇</a>
 				    <ul class="nav">
 				      <li class="<?php if ( $this->id=='product') {echo('active');}  ?>"><a href="<?php echo $this->createUrl('/admin/product/admin') ;?>">product产品</a></li>
-				      <li><a href="#">brand品牌</a></li>
+				       <li class="<?php if ( $this->id=='brand') {echo('active');}  ?>"><a href="<?php echo $this->createUrl('/admin/brand/admin') ;?>">brand品牌</a></li>
 				      <li class="<?php if ( $this->id=='activity') {echo('active');}  ?>"><a href="<?php echo $this->createUrl('/admin/activity/admin') ;?>">activity活动</a></li>
 				      <li><a href="#">页面</a></li>
 				      <li><a href="#">管理员</a></li>
