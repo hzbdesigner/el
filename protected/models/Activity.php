@@ -40,12 +40,12 @@ class Activity extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('atitle, acontent, tid', 'required'),
+			array('atitle, acontent, tid ,apic ,ades', 'required'),
 			array('tid', 'numerical', 'integerOnly'=>true),
 			array('atitle', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('aid, atitle, acontent, tid', 'safe', 'on'=>'search'),
+			array('aid, atitle, acontent, tid ,apic ,ades', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,7 +57,7 @@ class Activity extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			't' => array(self::BELONGS_TO, 'Atype', 'tid'),
+			// 'atpye' => array(self::BELONGS_TO, 'Atype', 'tid'),
 		);
 	}
 
@@ -71,6 +71,8 @@ class Activity extends CActiveRecord
 			'atitle' => 'Atitle',
 			'acontent' => 'Acontent',
 			'tid' => 'Tid',
+			'apic' => 'Apic',
+			'ades' => 'Ades',
 		);
 	}
 
@@ -89,6 +91,8 @@ class Activity extends CActiveRecord
 		$criteria->compare('atitle',$this->atitle,true);
 		$criteria->compare('acontent',$this->acontent,true);
 		$criteria->compare('tid',$this->tid);
+		$criteria->compare('apic',$this->apic);
+		$criteria->compare('ades',$this->ades);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
