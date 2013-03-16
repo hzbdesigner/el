@@ -6,8 +6,6 @@
 									<td>id</td>
 									<td>type</td>
 									<td>title</td>
-									<td>content</td>
-									<td>des</td>
 									<td>pic</td>
 									<td>管理</td>
 									
@@ -27,8 +25,6 @@
 											<td>$aid</td>
 											<td>$atype[ttitle]</td>
 											<td><a href="$url">$activity[atitle]</a></td>
-											<td>内容，内容内容，内容内容，内容</td>
-											<td>des</td>
 											<td>$activity[apic]</td>
 											<td> 
 											<a href="$delete_url">删除</a></a> 
