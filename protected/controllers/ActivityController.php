@@ -36,7 +36,7 @@ class ActivityController extends Controller
 		$criteria = new CDbCriteria($param);
 		$activitys=Activity::model()->findAll($param);
 
-       	$sub_content = $this->renderPartial('/activity/online' ,array(),true);
+       	$sub_content = $this->renderPartial('/activity/online' ,array('activitys'=>$activitys),true);
        	$this->render('index',array('sub_content' =>$sub_content));
 	}
 
@@ -50,7 +50,7 @@ class ActivityController extends Controller
 		$criteria = new CDbCriteria($param);
 
 		$activitys=Activity::model()->findAll($criteria);
-       	$sub_content = $this->renderPartial('/activity/history' ,array(),true);
+       	$sub_content = $this->renderPartial('/activity/history' ,array('activitys'=>$activitys),true);
        	$this->render('index',array('sub_content' =>$sub_content));
 	}
 
@@ -63,7 +63,7 @@ class ActivityController extends Controller
 		$criteria = new CDbCriteria($param);
 		$activitys=Activity::model()->findAll($param);
 	    
-	       	$sub_content = $this->renderPartial('/activity/Company' ,array(),true);
+	       	$sub_content = $this->renderPartial('/activity/Company' ,array('activitys'=>$activitys),true);
 	       	$this->render('index',array('sub_content' =>$sub_content));
 	}
 	//内容

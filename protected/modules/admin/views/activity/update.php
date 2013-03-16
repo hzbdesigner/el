@@ -7,7 +7,7 @@
 
 <div class="tab-pane " id="tab2">
 	
-	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/activity/update',array('aid'=>$model->aid))?>" method='POST'>
+	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/activity/update',array('aid'=>$model->aid))?>" method='POST'  enctype="multipart/form-data">
 		<fieldset>
 			<legend>新建活动</legend>
 			<div class="control-group">
@@ -50,7 +50,9 @@ EOD;
 			<div class="control-group">
 				<label class="control-label">图片</label>
 				<div class="controls">
-					<input type="file" name="pic" name='Activity[apic]' value='<?php echo $model->apic ; ?>'/>
+					<img src="<?php echo $model[apic]?>" alt="" />
+					
+					<input type="file"  name='apic' />
 				</div>
 			</div>
 

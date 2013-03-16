@@ -98,12 +98,6 @@ class ActivityController extends Controller
 		$error = '';
 		if(isset($_POST['Activity']))
 		{	
-			// echo "1";
-			// echo "Upload: " . $_FILES["apic"]["name"] . "<br />";
-   // 			echo "Type: " . $_FILES["apic"]["type"] . "<br />";
-		 //    echo "Size: " . ($_FILES["apic"]["size"] / 1024) . " Kb<br />";
-		 //    echo "Stored in: " . $_FILES["apic"]["tmp_name"] . "<br />";
-		    // if(empty($_FILES)){ echo "是空的";}else{echo "不是空的";}
 			if (!empty($_FILES)){ 
 				
 				$fileTypes = array('jpg','jpeg','gif','png'); // File extensions
@@ -191,29 +185,86 @@ class ActivityController extends Controller
 	 */
 
 	public function actionUpdate($aid)
-	{	
-
-		 $model=$this->loadModel($aid);
-
+	{
+		
+		$model=$this->loadModel($aid);
+		
+		//如果是点击修改进入update，那么跳过if，直接渲染update页面
+		//如果是修改后提交，进行update，那么执行if里的，重新存储文件
 		if(isset($_POST['Activity']))
-		{
-			$model->attributes=$_POST['Activity'];
-			if($model->save()){
-				$this->redirect(array('admin'));
-			}
+		{	
+			if (!empty($_FILES)){ 
+				
+				$fileTypes = array('jpg','jpeg','gif','png'); // File extensions
+				$fileParts = pathinfo($_FILES['apic']['name']);
+				$ext = strtolower( $fileParts['extension'] ); //文件类型转为小写~~
+				
+				if ( in_array( $ext ,$fileTypes ) ){   //是否在这个数组中？？
+					
+					$file_name = 'apic_'.time().rand(0,999).'.'.$ext;//文件命名，重新名一个名
+					$apic_file_path =  Yii::app()->basePath.'/../images/upload/'.$file_name;//设置存储路径（包括自己的名字）
+					move_uploaded_file( $_FILES['apic']['tmp_name'] , $apic_file_path);  //拷贝副本，将副本文件存储到新的位置。
+					
+					$_POST['Activity']['apic'] = 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/images/upload/'.$file_name;
+					
+					
+					if( $_POST['Activity']['atitle'] ){
+						
+						$model->attributes=$_POST['Activity'];
+						if($model->save()){
+							
+							$this->redirect(array('admin'));
+						}else{
+							$msg = '保存失败！'; //如果没有保存到数据库的话
+							$error = '请正确填写文章标题、分类、正文~！';
+
+						}
+					}else{
+						$msg = '请填写名称！'; //Activity对象没有name属性的话
+					}
+				}else{
+					$msg = '请上传 png/jpg/gif 格式的图片LOGO';//如果上传的文件格式不对的话
+				}
+			}else{
+				$msg = '请上传头像图片'; //如果$_file为空的话
+			}	
 		}
-
-
+		
 		$types=Atype::model()->findAll();
-
 		$sub_content=$this->renderPartial('update',array(
 			'types'=>$types,
+			'error'=>$error,
 			'model'=>$model,
+			'msg'=>$msg,
 		),true);
 
-
 		$this->render('index',array('sub_content'=>$sub_content));
+		
 	}
+	// public function actionUpdate($aid)
+	// {	
+
+	// 	 $model=$this->loadModel($aid);
+
+	// 	if(isset($_POST['Activity']))
+	// 	{
+	// 		$model->attributes=$_POST['Activity'];
+	// 		if($model->save()){
+	// 			$this->redirect(array('admin'));
+	// 		}
+	// 	}
+
+
+	// 	$types=Atype::model()->findAll();
+
+	// 	$sub_content=$this->renderPartial('update',array(
+	// 		'types'=>$types,
+	// 		'model'=>$model,
+	// 	),true);
+
+
+	// 	$this->render('index',array('sub_content'=>$sub_content));
+	// }
 
 	/**
 	 * Deletes a particular model.

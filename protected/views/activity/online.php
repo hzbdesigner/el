@@ -14,21 +14,21 @@
 	<div id="foo2">
 		<?php
 				
-				foreach($activitys as $activity){
-					$aid=$activity->aid;
-					$url=$this->createUrl('/activity/view',array('aid'=>$aid)) ;
-					 
-					echo <<<EOD
-					<div class="item">
-						<div class="title"><a href="$url">$activity[atitle]</a></div>
-						<div class="content">
-							<div class="img"><img src="$activity[apic]"></div>
-							<div class="des">$activity[ades]</div>
-						</div>
-					</div>
-EOD;
-		}
 				
+					foreach($activitys as $activity){
+						$aid=$activity->aid;
+						$url=$this->createUrl('/activity/view',array('aid'=>$aid)) ;
+						 
+						echo <<<EOD
+						<div class="item">
+							<div class="title"><a href="$url">$activity[atitle]</a></div>
+							<div class="content">
+								<div class="img"><img src="$activity[apic]"></div>
+								<div class="des">$activity[ades]</div>
+							</div>
+						</div>
+EOD;
+				}
 		?>
 	</div>
 	<div class="clearfix"></div>
