@@ -1,58 +1,66 @@
-<?php
-/* @var $this ProductController */
-/* @var $model Product */
-
-$this->breadcrumbs=array(
-	'Products'=>array('index'),
-	'Manage',
-);
-
-$this->menu=array(
-	array('label'=>'List Product', 'url'=>array('index')),
-	array('label'=>'Create Product', 'url'=>array('create')),
-);
-
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$.fn.yiiGridView.update('product-grid', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
-?>
-
-<h1>Manage Products</h1>
-
-<p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
-</p>
-
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
-</div><!-- search-form -->
-
-<?php $this->widget('zii.widgets.grid.CGridView', array(
-	'id'=>'product-grid',
-	'dataProvider'=>$model->search(),
-	'filter'=>$model,
-	'columns'=>array(
-		'pid',
-		'ptitle',
-		'tid',
-		'bid',
-		'pdes',
-		'pimg',
-		array(
-			'class'=>'CButtonColumn',
-		),
-	),
-)); ?>
+<div class="tab-pane active" id="tab1">
+						<p>统计：共有32条记录，共2页，这是第1页。</p>
+						<table class="table table-striped table-condensed ">
+							<thead>
+								<tr>
+									<td>id</td>
+									<td>type</td>
+									<td>brand</td>
+									<td>title</td>
+									<td>pic</td>
+									<td>管理</td>
+									
+								</tr>
+							</thead>
+							<tbody>
+								<?php 
+								foreach ($products as $product) {
+									$tid=$product->tid;
+									$ptype=Ptype::model()->findByPk($tid);
+									$bid=$product->bid;
+									$brand=Brand::model()->findByPk($bid);
+									$pid=$product->pid;
+									$url=$this->createUrl('/product/view',array('pid'=>$pid));
+									$delete_url=$this->createUrl('/admin/product/delete',array('pid'=>$pid));
+									$update_url=$this->createUrl('/admin/product/update',array('pid'=>$pid));
+									echo <<<EOD
+										<tr>
+											<td>$pid</td>
+											<td>$ptype[ttitle]</td>
+											<td>$brand[btitle]</td>
+											<td><a href="$url">$product[ptitle]</a></td>
+											<td>$product[pimg]</td>
+											<td> 
+											<a href="$delete_url">删除</a></a> 
+												<span class="divider">/</span> 
+												<a href="$update_url">修改</a> 
+											</td>
+										</tr>
+EOD;
+								}
+								?>
+								
+							</tbody>
+						</table>
+						<!-- <div class="pagination ">
+							<ul>
+								<li><a href="#">&laquo;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+						</div> -->
+						<?php  $this->widget('CLinkPager',array(
+							'pages'=>$pages,
+							'firstPageLabel' => '首页',
+							'lastPageLabel' => '末页',
+							'nextPageLabel' => '下一页',
+							'prevPageLabel' => '上一页',
+							'header' => '',
+							'footer' => '',
+							)); 
+						?>
+					</div>

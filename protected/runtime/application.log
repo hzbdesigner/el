@@ -6687,3 +6687,76 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
 HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
 ---
+2013/03/16 11:09:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/16 11:10:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/online
+---
+2013/03/16 11:10:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/16 11:10:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/16 12:49:25 [warning] [application] Failed to set unsafe attribute "pimg" of "Product".
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php (87)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/16 12:49:25 [error] [php] Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php:88) (/Applications/MAMP/htdocs/apps/framework/web/CHttpRequest.php:763)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php(92): ProductController->redirect()
+#1 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ProductController->actionCreate()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#7 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/product/create
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php (92)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/16 12:50:08 [warning] [application] Failed to set unsafe attribute "pimg" of "Product".
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php (87)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/16 13:08:01 [warning] [application] Failed to set unsafe attribute "pimg" of "Product".
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php (87)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/16 13:10:59 [warning] [application] Failed to set unsafe attribute "pimg" of "Product".
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php (87)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/16 13:13:44 [warning] [application] Failed to set unsafe attribute "pimg" of "Product".
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php (87)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
