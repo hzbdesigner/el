@@ -3,7 +3,7 @@
 		<div class="nav-placeholder top"></div>
 		<div class="title"><img src="<?php echo Yii::app()->baseUrl ; ?>/images/product-title.png" /></div>
 		<a class="back-to-lists" href="<?php echo $this->createUrl('index',array('bid'=>0,'tid'=>0)) ; ?>"><<返回列表</a>
-		<section id="ps-container" class="ps-container">
+		<div id="ps-container" class="ps-container">
 			
 			<div class="ps-contentwrapper">
 				
@@ -57,7 +57,7 @@ EOD;
 				
 			</div><!-- /ps-slidewrapper -->
 			
-		</section><!-- /ps-container -->
+		</div><!-- /ps-container -->
 		<div class="nav-placeholder top"></div>
 	</div>
 

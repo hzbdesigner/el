@@ -9,8 +9,21 @@ class ProductController extends Controller
 	 */
 	 public function actionIndex($bid,$tid)
 	{	
+		//pagination
+		$param = array(
+		'order'=>'pid desc',
+		);
+		$criteriaPage = new CDbCriteria($param);
+		$count = Product::model()->count( $criteriaPage);
+		//echo $count;
+		$pages = new CPagination( $count );
+		$pages->pageSize =1;
 		
+		$pages->applyLimit( $criteriaPage );
+		$page_num = ceil( $count/$pages->pageSize );
+		//echo $page_num;
 
+		//filter
 		$criteria = new CDbCriteria;
 		
 		$criteria->order='pid DESC';
@@ -35,6 +48,7 @@ class ProductController extends Controller
        		'bid'=>$bid,
        		'brands'=>$brands,
        		'ptypes'=>$ptypes,
+       		'pages'=>$pages,
        	));
 	}
 	

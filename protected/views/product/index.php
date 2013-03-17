@@ -71,14 +71,24 @@ EOD;
 					?>
 					
 				</ul>
-				<ul class="pagination">
+				<!-- <ul class="pagination">
 					<li class="prev"><a href="#">上一页</a></li>
 					<li ><a href="#" class="active">1</a></li>
 					<li><a href="#">2</a></li>
 					<li><a href="#">3</a></li>
 					<li><a href="#">4</a></li>
 					<li class="next"><a href="#">下一页</a></li>
-				</ul>
+				</ul> -->
+				<?php  $this->widget('CLinkPager',array(
+							'pages'=>$pages,
+							'firstPageLabel' => '首页',
+							'lastPageLabel' => '末页',
+							'nextPageLabel' => '下一页',
+							'prevPageLabel' => '上一页',
+							'header' => '',
+							'footer' => '',
+							)); 
+				?>
 				
 			</div>
 		</div>

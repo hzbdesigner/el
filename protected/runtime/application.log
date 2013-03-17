@@ -8322,3 +8322,127 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/product/index
 HTTP_REFERER=http://localhost/apps/el/index.php/product/view?pid=7
 ---
+2013/03/17 16:11:54 [error] [php] Undefined variable: criteria (/Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php:20)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?bid=2&tid=1
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (20)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 16:18:40 [error] [php] Object of class CPagination could not be converted to string (/Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (21)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 16:19:14 [error] [php] Object of class CPagination could not be converted to string (/Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (21)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 16:19:15 [error] [php] Object of class CPagination could not be converted to string (/Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (21)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 16:19:15 [error] [php] Object of class CPagination could not be converted to string (/Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (21)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 16:19:15 [error] [php] Object of class CPagination could not be converted to string (/Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (21)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 16:19:15 [error] [php] Object of class CPagination could not be converted to string (/Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php:21)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (21)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 16:25:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/17 16:27:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/17 17:03:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
