@@ -43,12 +43,7 @@ EOD;
 EOD;
 					}
 					?>
-					<dd><a href="#">客厅</a></dd>
-					<dd><a href="#">餐厅</a></dd>
-					<dd><a href="#">卧室</a></dd>
-					<dd><a href="#">书房</a></dd>
-					<dd><a href="#">饰品</a></dd>
-					<dd><a href="#">其他</a></dd>
+					
 				</dl>
 			</div>
 			<div class="lists">

@@ -42,14 +42,14 @@
 					</li>
 
 					<li class="product  nav-cell"><a href="<?php echo $this->createUrl('/product/index',array('tid'=>0,'bid'=>0));?>" > </a>
-						<ul class="dropdowns">
+						<!-- <ul class="dropdowns">
 							<li class="dropdown"><a href="#em">客厅</a></li>
 							<li class="dropdown"><a href="#em">餐厅</a></li>
 							<li class="dropdown"><a href="#em">卧室</a></li>
 							<li class="dropdown"><a href="#em">书房</a></li>
 							<li class="dropdown"><a href="#em">饰品</a></li>
 							<li class="dropdown"><a href="#em">其他</a></li>
-						</ul>
+						</ul> -->
 					</li>
 					<li class="service  nav-cell"><a href="<?php echo $this->createUrl('/service');?>" > </a>
 						<ul class="dropdowns">

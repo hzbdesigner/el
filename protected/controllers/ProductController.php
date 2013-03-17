@@ -17,7 +17,7 @@ class ProductController extends Controller
 		$count = Product::model()->count( $criteriaPage);
 		//echo $count;
 		$pages = new CPagination( $count );
-		$pages->pageSize =1;
+		$pages->pageSize =10;
 		
 		$pages->applyLimit( $criteriaPage );
 		$page_num = ceil( $count/$pages->pageSize );
