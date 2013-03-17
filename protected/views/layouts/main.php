@@ -6,9 +6,9 @@
 
 <!--required  script-->
 <script language="javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/jquery.js"></script>
-<!-- <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/css/horizon.css"> -->
-<link href="<?php echo Yii::app()->baseUrl ; ?>/css/horizon.less" rel="stylesheet/less" type="text/css">
-<script language="javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/less.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl; ?>/css/horizon.css">
+<!--link href="<?php echo Yii::app()->baseUrl ; ?>/css/horizon.less" rel="stylesheet/less" type="text/css">
+<script language="javascript" src="<?php echo Yii::app()->baseUrl ; ?>/js/less.js"></script-->
 
 
 <!--demo  code example-->
