@@ -2,25 +2,26 @@
 	<div class="page-wrapper">
 		<div class="nav-placeholder top"></div>
 		<div class="title"><img src="<?php echo Yii::app()->baseUrl ; ?>/images/product-title.png" /></div>
-		<a class="back-to-lists" href="products.html"><<返回列表</a>
+		<a class="back-to-lists" href="<?php echo $this->createUrl('index',array('bid'=>0,'tid'=>0)) ; ?>"><<返回列表</a>
 		<section id="ps-container" class="ps-container">
 			
 			<div class="ps-contentwrapper">
 				
 				<div class="ps-content">
-					<h2><?php echo $theproduct[ptitle] ;?></h2>
+					<h2><?php echo $theproduct->ptitle;?></h2>
 					<span class="ps-price">100</span>
-					<p><?php echo $theproduct[pdes] ;?></p>
+					<p><?php echo $theproduct->pdes;?></p>
 					<!-- <a href="#">购买</a> -->
 				</div>
 				<?php 
 					foreach ($products as $product) {
-						
+						$ptitle=$product->ptitle;
+						$pdes=$product->pdes;
 						echo <<<EOD
 						<div class="ps-content">
-							<h2>$product[ptitle]</h2>
+							<h2>$ptitle</h2>
 							<span class="ps-price">£65</span>
-							<p>$product[pdes]</p>
+							<p>$pdes</p>
 							<!-- <a href="#">购买</a> -->
 						</div>
 EOD;
@@ -34,12 +35,14 @@ EOD;
 			<div class="ps-slidewrapper">
 			
 				<div class="ps-slides">
-					<div ><img src='<?php echo $theproduct[pimg] ; ?>' style='width:100%;height:100%;' /></div>
+					
+					<div style="background-image:url(<?php echo $theproduct->pimg ; ?>);background-size:100% 100%;"></div>
 					<?php 
 					foreach($products as $product){
-						$imgurl=$product[pimg];
+						$imgurl=$product->pimg;
 						echo <<<EOD
-						<div ><img src='$imgurl' style='width:100%;height:100%;' /></div>
+						<div style="background-image:url($imgurl);background-size:100% 100%;"></div>
+						
 
 EOD;
 					}

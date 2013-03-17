@@ -38,29 +38,18 @@ class ProductController extends Controller
        	));
 	}
 	
-	public function actionView($pid,$tid,$bid)
+	public function actionView($pid)
 	{		
-	    
 		$criteriaAll = new CDbCriteria;
 		$criteriaAll->order='pid DESC';
-		if($bid != 0){
-			
-			$criteriaAll->addCondition('bid='.$bid);
-		}
-		if($tid != 0){
-			$criteriaAll->addCondition('tid='.$tid);
-		}
 		
-		$criteria = new CDbCriteria;
-		$criteria->order='pid DESC';
-		$criteria->addCondition('pid='.$pid);
-		
-
 		$products=Product::Model()->findAll($criteriaAll);
-		$theproduct=Product::Model()->findAll($criteria);
+		$theproduct=Product::Model()->findByPk($pid);
+		// if($products){echo "yes";}else{echo "no";}
+		// if($theproduct){echo "yes";}else{echo "no";}
 
 	    $this->render('view',array(
-	    	'prodducts'=>$products,
+	    	'products'=>$products,
 	    	'theproduct'=>$theproduct,
 	    ));
 	}
