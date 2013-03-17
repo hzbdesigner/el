@@ -50,7 +50,7 @@ EOD;
 			<div class="control-group">
 				<label class="control-label">图片</label>
 				<div class="controls">
-					<img src="<?php echo $model[apic]?>" alt="" />
+					<img src="<?php echo $model->apic ;?>" alt="" />
 					
 					<input type="file"  name='apic' />
 				</div>

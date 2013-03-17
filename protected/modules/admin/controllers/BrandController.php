@@ -62,7 +62,9 @@ class BrandController extends Controller
 	 */
 	public function actionCreate()
 	{
-
+		$error=" ";
+		if(isset($_POST['Activity']))
+		{	
 			if( $_POST['Brand'] ){
 
 				$model=new Brand;
@@ -74,9 +76,9 @@ class BrandController extends Controller
 					$error = '请正确填写文章标题、分类、正文~！';
 				}
 			}
-		
+		}
 		$sub_content=$this->renderPartial('create',array(
-			
+			'error'=>$error
 			),true);
 		$this->render('index',array(
 			'sub_content'=>$sub_content,
@@ -95,7 +97,7 @@ class BrandController extends Controller
 	public function actionUpdate($bid)
 	{
 		$model=$this->loadModel($bid);
-
+		$error=" ";
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 

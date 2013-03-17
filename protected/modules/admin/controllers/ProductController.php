@@ -134,6 +134,8 @@ class ProductController extends Controller
 		
 		//如果是点击修改进入update，那么跳过if，直接渲染update页面
 		//如果是修改后提交，进行update，那么执行if里的，重新存储文件
+		$error=" ";
+		$msg=" ";
 		if(isset($_POST['Product']))
 		{	
 			if (!empty($_FILES)){ 
