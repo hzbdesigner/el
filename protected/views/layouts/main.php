@@ -41,7 +41,7 @@
 						</ul>
 					</li>
 
-					<li class="product  nav-cell"><a href="<?php echo $this->createUrl('/product');?>" > </a>
+					<li class="product  nav-cell"><a href="<?php echo $this->createUrl('/product/index',array('tid'=>0,'bid'=>0));?>" > </a>
 						<ul class="dropdowns">
 							<li class="dropdown"><a href="#em">客厅</a></li>
 							<li class="dropdown"><a href="#em">餐厅</a></li>

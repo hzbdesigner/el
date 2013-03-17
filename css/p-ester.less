@@ -128,7 +128,11 @@ html,body{background-color:#e8e8e8;height:100%;width:100%;}
 	.filter{.mt10;
 		dl{.clearfix;.mt5;}
 		dt{.fl;.mr15;color:#bb8449;margin-bottom:10px;}
-		dd{.fl;.mr25;color:#444;margin-bottom:10px;}
+		dd{.fl;.mr25;color:#666;margin-bottom:10px;
+			&.active{border-bottom:2px solid #bb8449;
+				a{color:#333;}
+			}
+		}
 		a:hover{color:#bb8449;}
 	}
 	.lists{width:960px;.clearfix;

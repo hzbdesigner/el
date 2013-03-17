@@ -7170,3 +7170,414 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/admin/brand/update
 HTTP_REFERER=http://localhost/apps/el/index.php/admin/brand/update/bid/7
 ---
+2013/03/17 07:33:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/17 07:33:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/online
+---
+2013/03/17 07:33:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/17 09:30:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$bid' in 'where clause'. The SQL statement executed was: SELECT * FROM `el_product` `t` WHERE (bid=$bid) AND (tid=$tid) ORDER BY pid DESC.
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (28)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 09:30:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$bid' in 'where clause'. The SQL statement executed was: SELECT * FROM `el_product` `t` WHERE (bid=$bid) AND (tid=$tid) ORDER BY pid DESC' in /Applications/MAMP/htdocs/apps/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(1291): CDbCommand->queryAll()
+#2 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(1410): CActiveRecord->query(Object(CDbCriteria), true)
+#3 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(28): CActiveRecord->findAll(Object(CDbCriteria))
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ProductController->actionIndex()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('')
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product')
+#10 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/apps/el/index.php/product
+HTTP_REFERER=http://localhost/apps/el/index.php/service
+---
+2013/03/17 09:39:59 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.createUrl" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php(39): CComponent->__get('createUrl')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#5 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(33): CController->render('index', Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ProductController->actionIndex()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('')
+#11 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product')
+#12 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/apps/el/index.php/product
+HTTP_REFERER=http://localhost/apps/el/index.php/service
+---
+2013/03/17 09:40:28 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.creteUrl" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php(39): CComponent->__get('creteUrl')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#5 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(33): CController->render('index', Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ProductController->actionIndex()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('')
+#11 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product')
+#12 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/apps/el/index.php/product
+HTTP_REFERER=http://localhost/apps/el/index.php/service
+---
+2013/03/17 09:40:29 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.creteUrl" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php(39): CComponent->__get('creteUrl')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#5 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(33): CController->render('index', Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ProductController->actionIndex()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('')
+#11 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product')
+#12 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/apps/el/index.php/product
+HTTP_REFERER=http://localhost/apps/el/index.php/service
+---
+2013/03/17 09:40:29 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.creteUrl" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php(39): CComponent->__get('creteUrl')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(127): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#5 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(33): CController->render('index', Array)
+#6 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ProductController->actionIndex()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('')
+#11 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product')
+#12 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/apps/el/index.php/product
+HTTP_REFERER=http://localhost/apps/el/index.php/service
+---
+2013/03/17 09:41:51 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php:180)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/product/update/pid/1
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php (180)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 09:41:58 [error] [php] Undefined variable: error (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php:180)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/product/update/pid/7
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php (180)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 09:54:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('')
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product')
+#5 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/apps/el/index.php/product
+HTTP_REFERER=http://localhost/apps/el/index.php/product
+---
+2013/03/17 09:56:03 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('')
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product')
+#5 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/apps/el/index.php/product
+HTTP_REFERER=http://localhost/apps/el/index.php/product
+---
+2013/03/17 09:56:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "0".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('0')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('0')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/0/0/1/0')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/product/0/0/1/0
+HTTP_REFERER=http://localhost/apps/el/index.php/product
+---
+2013/03/17 10:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "0".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('0')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('0')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/0/0/1/0')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/product/0/0/1/0
+HTTP_REFERER=http://localhost/apps/el/index.php/product
+---
+2013/03/17 10:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tid".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('tid')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('tid')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/tid/0/b...')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/product/tid/0/bid/0
+HTTP_REFERER=http://localhost/apps/el/index.php/product/0/0/1/0
+---
+2013/03/17 10:04:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tid".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('tid')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('tid')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/tid/0/b...')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/product/tid/0/bid/0
+HTTP_REFERER=http://localhost/apps/el/index.php/product/0/0/1/0
+---
+2013/03/17 10:04:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "tid".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('tid')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('tid')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/tid/0/b...')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/product/tid/0/bid/0
+HTTP_REFERER=http://localhost/apps/el/index.php/product/0/0/1/0
+---
+2013/03/17 10:04:53 [error] [php] Undefined variable: type (/Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php:22)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#3 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#6 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#7 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (22)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 10:06:10 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:337
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('index')
+#4 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/index')
+#5 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#6 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/apps/el/index.php/product/index?tid=0
+HTTP_REFERER=http://localhost/apps/el/index.php/product/index?tid=0&bid=0
+---
+2013/03/17 10:20:29 [error] [php] Undefined variable: sub_content (/Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/product/index.php:12)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ProductController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): ProductController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php(213): ProductController->render()
+#3 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ProductController->actionIndex()
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/admin/product/index
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/views/product/index.php (12)
+in /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/ProductController.php (213)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 10:23:19 [error] [php] Undefined variable: types (/Applications/MAMP/htdocs/apps/el/protected/views/product/index.php:28)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ProductController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): ProductController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(38): ProductController->render()
+#3 unknown(0): ProductController->actionIndex()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#10 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?bid=0&tid=0
+in /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php (28)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (38)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 10:23:58 [error] [exception.CException] exception 'CException' with message 'Property "Ptype.title" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(144): CComponent->__get('title')
+#1 /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php(30): CActiveRecord->__get('title')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(38): CController->render('index', Array)
+#7 [internal function]: ProductController->actionIndex('0', '0')
+#8 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#9 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#10 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('index')
+#14 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/index')
+#15 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/apps/el/index.php/product/index?bid=0&tid=0
+HTTP_REFERER=http://localhost/apps/el/index.php/product/index?bid=1&tid=0
+---
+2013/03/17 10:23:59 [error] [exception.CException] exception 'CException' with message 'Property "Ptype.title" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(144): CComponent->__get('title')
+#1 /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php(30): CActiveRecord->__get('title')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(38): CController->render('index', Array)
+#7 [internal function]: ProductController->actionIndex('0', '0')
+#8 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#9 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#10 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('index')
+#14 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/index')
+#15 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/apps/el/index.php/product/index?bid=0&tid=0
+HTTP_REFERER=http://localhost/apps/el/index.php/product/index?bid=1&tid=0
+---
+2013/03/17 10:23:59 [error] [exception.CException] exception 'CException' with message 'Property "Ptype.title" is not defined.' in /Applications/MAMP/htdocs/apps/framework/base/CComponent.php:131
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(144): CComponent->__get('title')
+#1 /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php(30): CActiveRecord->__get('title')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(127): require('/Applications/M...')
+#3 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(96): CBaseController->renderInternal('/Applications/M...', Array, true)
+#4 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): CBaseController->renderFile('/Applications/M...', Array, true)
+#5 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(38): CController->render('index', Array)
+#7 [internal function]: ProductController->actionIndex('0', '0')
+#8 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#9 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#10 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('index')
+#14 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/index')
+#15 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/apps/el/index.php/product/index?bid=0&tid=0
+HTTP_REFERER=http://localhost/apps/el/index.php/product/index?bid=1&tid=0
+---
+2013/03/17 11:16:23 [error] [php] Undefined variable: viewurl (/Applications/MAMP/htdocs/apps/el/protected/views/product/index.php:65)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ProductController->renderFile()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): ProductController->renderPartial()
+#2 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(38): ProductController->render()
+#3 unknown(0): ProductController->actionIndex()
+#4 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#10 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+in /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php (65)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (38)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
+2013/03/17 11:17:07 [error] [php] Missing argument 1 for CController::createUrl(), called in /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php on line 61 and defined (/Applications/MAMP/htdocs/apps/framework/web/CController.php:960)
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CBaseController.php(96): ProductController->renderInternal()
+#1 /Applications/MAMP/htdocs/apps/framework/web/CController.php(870): ProductController->renderFile()
+#2 /Applications/MAMP/htdocs/apps/framework/web/CController.php(783): ProductController->renderPartial()
+#3 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(38): ProductController->render()
+#4 unknown(0): ProductController->actionIndex()
+#5 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#6 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#7 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams()
+#8 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): ProductController->runAction()
+#9 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): ProductController->runActionWithFilters()
+#10 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): ProductController->run()
+#11 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /Applications/MAMP/htdocs/apps/el/index.php(13): CWebApplication->run()
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+in /Applications/MAMP/htdocs/apps/el/protected/views/product/index.php (61)
+in /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php (38)
+in /Applications/MAMP/htdocs/apps/el/index.php (13)
