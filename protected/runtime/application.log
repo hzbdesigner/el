@@ -9158,6 +9158,7 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
 HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
 ---
+<<<<<<< HEAD
 2013/03/18 03:30:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php:382
 Stack trace:
 #0 /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php(331): CDbConnection->open()
@@ -9182,4 +9183,38 @@ Stack trace:
 #19 {main}
 REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
 HTTP_REFERER=http://localhost/apps/el/
+=======
+2013/03/18 03:33:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/18 03:33:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
+---
+2013/03/18 03:33:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "logo1.jpg".' in /Applications/MAMP/htdocs/apps/framework/web/CController.php:484
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/web/CController.php(271): CController->missingAction('logo1.jpg')
+#1 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('logo1.jpg')
+#2 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/logo1....')
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
+HTTP_REFERER=http://localhost/apps/el/index.php/activity/online
+>>>>>>> master
 ---
