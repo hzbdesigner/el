@@ -17,7 +17,7 @@
 				<div class="divider"></div>
 				<li class="<?php if ($this->action->id== 'Jonathan_Charles') { echo 'active';} ?>"><a href="<?php echo $this->createUrl('/brand/Jonathan_Charles') ; ?>">Jonathan Charles</a></li>
 				<div class="divider"></div>
-				<li class="<?php if ($this->action->id== 'Eastern_Legend') { echo 'active';} ?>"><a href="<?php echo $this->createUrl('/brand/Eastern_Legend') ; ?>">Eastern Legend</a></li>
+				<li class="<?php if ($this->action->id== 'Eastern_Legend') { echo 'active';} ?>"><a href="<?php echo $this->createUrl('/brand/Eastern_Legend') ; ?>">Eastern Legends</a></li>
 			</ul>
 
 			<?php echo $sub_content; ?>
