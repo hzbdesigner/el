@@ -19,7 +19,7 @@
 			<div class="caption">
 				<p class="title">Maitland-<br /> Smith</p>
 				<div class="detail">
-					<p class="description">Maitland-Maitland-Smith通过其世界级的质量与创新设计成为行业领跑者。 精湛的铸品，精美的瓷器，精致的收尾，精心的手绘以及精良的木雕都是Maitland-Smith所专注与擅长的。</p>
+					<p class="description">Maitland-Smith通过其世界级的质量与创新设计成为行业领跑者。 精湛的铸品，精美的瓷器，精致的收尾，精心的手绘以及精良的木雕都是Maitland-Smith所专注与擅长的。</p>
 					<div class="btn-no"><a href='<?php echo $this->createUrl('/brand/Maitland_Smith') ; ?>'>ENTER</a></div>
 				</div>
 				
