@@ -63,7 +63,7 @@ class BrandController extends Controller
 	public function actionCreate()
 	{
 		$error=" ";
-		if(isset($_POST['Activity']))
+		if(isset($_POST['Brand']))
 		{	
 			if( $_POST['Brand'] ){
 
@@ -109,7 +109,8 @@ class BrandController extends Controller
 		}
 
 		$sub_content=$this->renderPartial('update',array(
-			'model'=>$model
+			'model'=>$model,
+			'error'=>$error,
 			),true);
 		$this->render('index',array(
 			'sub_content'=>$sub_content,

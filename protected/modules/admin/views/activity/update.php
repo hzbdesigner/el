@@ -52,7 +52,7 @@ EOD;
 				<div class="controls">
 					<img src="<?php echo $model->apic ;?>" alt="" />
 					
-					<input type="file"  name='apic' />
+					<input type="file"  name='apic' value='<?php echo $model->apic ;?>'/>
 				</div>
 			</div>
 

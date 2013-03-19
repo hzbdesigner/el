@@ -5,8 +5,9 @@
 		if( $error ){
 			echo "<div class='alert alert-error'><button type='button' class='close' data-dismiss='alert'>×</button>$error</div>";
 		}
+		$bid=$model->bid;
 	?>
-	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/brand/update')?>" method='POST' enctype="multipart/form-data" >
+	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/brand/update',array('bid'=>$bid))?>" method='POST' enctype="multipart/form-data" >
 		<fieldset>
 			<legend>新建品牌</legend>
 			<div class="control-group">
