@@ -17,9 +17,9 @@
 		  </li>
 		  <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/slide2.jpg" alt="">
 			<div class="caption">
-				<p class="title">Maitland <br /> Smith</p>
+				<p class="title">Maitland-<br /> Smith</p>
 				<div class="detail">
-					<p class="description">Maitland Smith的每一件家具都是一件完美的艺术品，极高的质量标准，纯手工精心打造以及极富多元化的创意灵感。</p>
+					<p class="description">Maitland-Maitland-Smith通过其世界级的质量与创新设计成为行业领跑者。 精湛的铸品，精美的瓷器，精致的收尾，精心的手绘以及精良的木雕都是Maitland-Smith所专注与擅长的。</p>
 					<div class="btn-no"><a href='<?php echo $this->createUrl('/brand/Maitland_Smith') ; ?>'>ENTER</a></div>
 				</div>
 				
@@ -29,7 +29,7 @@
 			<div class="caption">
 				<p class="title">Henkel Harris</p>
 				<div class="detail">
-					<p class="description">Henkel Harris的每一件家具都是一件完美的艺术品，极高的质量标准，纯手工精心打造以及极富多元化的创意灵感。</p>
+					<p class="description">70年的传承演绎铸就经典，岁月的洗涤使得Henkel Harris更加辉煌灿烂。时至今日，Henkel Harris已经成就了深入人心的品牌形象，更是在史书上留下了厚重的一笔，她的未来必将经久辉煌。</p>
 					<div class="btn-no"><a href='<?php echo $this->createUrl('/brand/Henkel_Harris') ; ?>'>ENTER</a></div>
 				</div>
 			</div>
@@ -38,7 +38,7 @@
 			<div class="caption">
 				<p class="title">Ourhouse</p>
 				<div class="detail">
-					<p class="description">Ourhouse的每一件家具都是一件完美的艺术品，极高的质量标准，纯手工精心打造以及极富多元化的创意灵感。</p>
+					<p class="description">岁月更迭，风雨洗涤，仍不变初心。Ourhouse 坚持做纯粹的手工家具，将温暖的手工制品携带涓涓爱心带进千家万户。</p>
 					<div class="btn-no"><a href='<?php echo $this->createUrl('/brand/Ourhouse') ; ?>'>ENTER</a></div>
 				</div>
 			</div>
