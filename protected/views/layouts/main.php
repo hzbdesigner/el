@@ -36,7 +36,7 @@
 							<li class="dropdown"><a href="<?php echo $this->createUrl('/brand/Henredon');?>">Henredon</a></li>
 							<li class="dropdown"><a href="<?php echo $this->createUrl('/brand/Ourhouse');?>">Ourhouse</a></li>
 							<li class="dropdown"><a href="<?php echo $this->createUrl('/brand/Maitland_Smith');?>">Maitland Smith</a></li>
-							<li class="dropdown"><a href="<?php echo $this->createUrl('/brand/Jonathan_Charles');?>">Jonathan Charles</a></li>
+							<li class="dropdown" ><a href="<?php echo $this->createUrl('/brand/Jonathan_Charles');?>" style="line-height:18px;height:40px;">Jonathan Charles</a></li>
 							<li class="dropdown"><a href="<?php echo $this->createUrl('/brand/Eastern_Legend');?>">Eastern Legend</a></li>
 						</ul>
 					</li>

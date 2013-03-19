@@ -189,7 +189,7 @@ class ActivityController extends Controller
 		
 		$model=$this->loadModel($aid);
 		$error=" ";
-		$msg=" ";		
+		$msg=false;		
 		//如果是点击修改进入update，那么跳过if，直接渲染update页面
 		//如果是修改后提交，进行update，那么执行if里的，重新存储文件
 		if(isset($_POST['Activity']))
@@ -198,10 +198,13 @@ class ActivityController extends Controller
 				
 				$fileTypes = array('jpg','jpeg','gif','png'); // File extensions
 				$fileParts = pathinfo($_FILES['apic']['name']);
+				//echo "运行到这里了";
+				//echo $fileParts;
 				$ext = strtolower( $fileParts['extension'] ); //文件类型转为小写~~
-				
+				//echo 'nihao';
+				//if($ext){echo "ext存在";}else{echo "ext不存在";}
 				if ( in_array( $ext ,$fileTypes ) ){   //是否在这个数组中？？
-					
+					//echo "运行到这里了3";
 					$file_name = 'apic_'.time().rand(0,999).'.'.$ext;//文件命名，重新名一个名
 					$apic_file_path =  Yii::app()->basePath.'/../images/upload/'.$file_name;//设置存储路径（包括自己的名字）
 					move_uploaded_file( $_FILES['apic']['tmp_name'] , $apic_file_path);  //拷贝副本，将副本文件存储到新的位置。
