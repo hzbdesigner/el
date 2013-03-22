@@ -20,9 +20,9 @@
 			<input class="span4" style="margin-bottom:15px;padding:5px; background-color:transparent;color:#886239;border-color:#886239;" type="text" value="内容主题">
 		</p>
 		<p>
-			<textarea class="span5" style="margin-bottom:15px;min-height:60px;padding:5px; background-color:transparent;color:#886239;border-color:#886239;"  type="text" value="请输入您的留言反馈">请输入您的留言反馈</textarea>
+			<textarea class="span5" style="margin-bottom:15px;min-height:60px;padding:5px; background-color:transparent;color:#886239;border-color:#886239; "  type="text" value="请输入您的留言反馈">请输入您的留言反馈</textarea>
 		</p>
-		<button class="btn">提&nbsp;&nbsp;交</button>
+		<button class="btn" style="background-color:transparent !important;background-image:none;border-color:#886239; color:#444;">提&nbsp;&nbsp;交</button>
 	</form>
 </div>
 
