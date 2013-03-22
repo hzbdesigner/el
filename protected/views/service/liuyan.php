@@ -6,7 +6,7 @@
 	<p>配送服务描述配送服务描述配送服务描述配送服务描述配送服务描述配送服务描述</p>
 </div> -->
 <!-- <div class="img"><img src="<?php echo Yii::app()->baseUrl; ?>/images/service-peisong.jpg" /></div> -->
-
+<div class="" ><img style="width:515px;height:auto;" src="<?php echo Yii::app()->baseUrl; ?>/images/subbanner-jianjie.jpg" /></div>
 <div style="color:#666 !important; font-size:12px;position:relative;">
 	<form  style="padding-left:15px;padding-top:20px;">
 		<p>
@@ -24,7 +24,6 @@
 		</p>
 		<button class="btn">提&nbsp;&nbsp;交</button>
 	</form>
-	<img src="<?php echo Yii::app()->baseUrl; ?>/images/tel.png" style="position:absolute;right:0px;top:175px;width:210px;height:175px;"/>
 </div>
 
 

@@ -9561,3 +9561,49 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/activity/logo1.jpg
 HTTP_REFERER=http://localhost/apps/el/index.php/activity/all
 ---
+2013/03/19 15:37:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/apps/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(624): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Brand))
+#7 /Applications/MAMP/htdocs/apps/el/protected/models/Brand.php(27): CActiveRecord::model('Brand')
+#8 /Applications/MAMP/htdocs/apps/el/protected/modules/admin/controllers/BrandController.php(155): Brand::model()
+#9 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): BrandController->actionAdmin()
+#10 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('admin')
+#14 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('admin/brand/adm...')
+#15 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/apps/el/index.php/admin/brand/admin
+HTTP_REFERER=http://localhost/apps/el/index.php/admin
+---
+2013/03/22 07:31:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/apps/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(624): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Activity))
+#7 /Applications/MAMP/htdocs/apps/el/protected/models/Activity.php(24): CActiveRecord::model('Activity')
+#8 /Applications/MAMP/htdocs/apps/el/protected/controllers/ActivityController.php(24): Activity::model()
+#9 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(50): ActivityController->actionAll()
+#10 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('all')
+#14 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('activity/all')
+#15 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/apps/el/index.php/activity/all
+HTTP_REFERER=http://localhost/apps/el/
+---
