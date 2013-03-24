@@ -80,9 +80,9 @@
 		<div class="container">
 			<ul class="friendlink">
 				<li ><a href="<?php echo $this->createUrl('/site'); ?>">首页 </a></li>
-				<!-- <li ><a href="#">国际版 </a></li>
-				<li ><a href="#">法律声明 </a></li>
-				<li ><a href="#">加入团队 </a></li> -->
+				<li ><a href="<?php echo $this->createUrl('/brand');?>">品牌 </a></li>
+				<li ><a href="<?php echo $this->createUrl('/product');?>">产品 </a></li>
+				<li ><a href="<?php echo $this->createUrl('/contact');?>">联系我们 </a></li>
 				<li ><a href="http://weibo.com/u/3154684691">东方传奇微博 </a></li>
 			</ul>
 			<div class="search">
