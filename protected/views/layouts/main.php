@@ -86,9 +86,21 @@
 				<li ><a href="#">东方传奇微博 </a></li>
 			</ul>
 			<div class="search">
-				<form>
+				<!-- <form>
 					<input placeholder="搜索"  />
-				</form>
+				</form> -->
+				<script>
+				  (function() {
+				    var cx = '013636378173885203879:ncisgarv7li';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+				        '//www.google.com/cse/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
 			</div>
 			<p class="copyright"><span>北京东方传奇家具有限公司版权所有©2013</span>&nbsp;&nbsp;<span>京ICP备 1111111111号</span></p>
 		</div>
