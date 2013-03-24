@@ -79,10 +79,10 @@
 	>
 		<div class="container">
 			<ul class="friendlink">
-				<li ><a href="<?php echo $this->createUrl('/site'); ?>">首页 </a></li>
-				<li ><a href="<?php echo $this->createUrl('/brand');?>">品牌 </a></li>
-				<li ><a href="<?php echo $this->createUrl('/product');?>">产品 </a></li>
-				<li ><a href="<?php echo $this->createUrl('/contact');?>">联系我们 </a></li>
+				<li ><a href="<?php echo $this->createUrl('/site'); ?>">首&nbsp;页 </a></li>&nbsp;
+				<li ><a href="<?php echo $this->createUrl('/brand');?>">品&nbsp;牌 </a></li>&nbsp;
+				<li ><a href="<?php echo $this->createUrl('/product/index',array('tid'=>0,'bid'=>0));?>">产&nbsp;品 </a></li>&nbsp;
+				<li ><a href="<?php echo $this->createUrl('/contact');?>">联系我们 </a></li>&nbsp;
 				<li ><a href="http://weibo.com/u/3154684691">东方传奇微博 </a></li>
 			</ul>
 			<div class="search">
@@ -143,7 +143,7 @@
 </body>
 <style type="text/css">
 
-.gsc-results-wrapper-overlay{margin-top:90px;}
+.gsc-results-wrapper-overlay{margin-top:90px;z-index:9999;}
 
 .gsc-search-button{display: none;}
 
