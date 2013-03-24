@@ -11,7 +11,7 @@
 
 					<li class="<?php if ($this->action->id == 'index'|| $this->action->id == 'brief') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/about/brief'); ?>" >公司简介 </a><span> > </span></li>
 					<!-- <li class="<?php if ($this->action->id == 'culture') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/about/culture'); ?>" >企业文化</a><span> > </span></li> -->
-					<li class="<?php if ($this->action->id == 'idea') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/about/idea'); ?>">公司理念</a><span> > </span></li>
+					<li class="<?php if ($this->action->id == 'idea') {echo 'active';} ?>"><a href="<?php echo $this->createUrl('/about/idea'); ?>">经营理念</a><span> > </span></li>
 				</ul>
 			</div>
 
