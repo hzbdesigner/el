@@ -89,18 +89,37 @@
 				<!-- <form>
 					<input placeholder="搜索"  />
 				</form> -->
-				<script>
-				  (function() {
-				    var cx = '013636378173885203879:ncisgarv7li';
-				    var gcse = document.createElement('script');
-				    gcse.type = 'text/javascript';
-				    gcse.async = true;
-				    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-				        '//www.google.com/cse/cse.js?cx=' + cx;
-				    var s = document.getElementsByTagName('script')[0];
-				    s.parentNode.insertBefore(gcse, s);
-				  })();
-				</script>
+				     <script>  (function() {
+
+    var cx = '013636378173885203879:ncisgarv7li';
+
+    var gcse = document.createElement('script');
+
+    gcse.type = 'text/javascript';
+
+    gcse.async = true;
+
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+
+        '//www.google.com/cse/cse.js?cx=' + cx;
+
+    var s = document.getElementsByTagName('script')[0];
+
+    s.parentNode.insertBefore(gcse, s);
+
+  })();
+
+</script>
+
+<gcse:search></gcse:search>
+
+
+
+
+
+
+
+
 			</div>
 			<p class="copyright"><span>北京东方传奇家具有限公司版权所有©2013</span>&nbsp;&nbsp;<span>京ICP备 1111111111号</span></p>
 		</div>
@@ -122,4 +141,23 @@
 		
 
 </body>
+<style type="text/css">
+
+.gsc-results-wrapper-overlay{margin-top:90px;}
+
+.gsc-search-button{display: none;}
+
+.gsc-clear-button{display: none;}
+
+.footer .search form input{width:200px !important;color:#666 !important;}
+
+.cse .gsc-control-cse, .gsc-control-cse{padding:0 !important;}
+
+.cse .gsc-control-cse, .gsc-control-cse {border:none;}
+
+.gsc-input input{margin-bottom:0px !important;width:200px;}
+
+.footer .search form{top:0px;left:13px;}
+
+</style>
 </html>
