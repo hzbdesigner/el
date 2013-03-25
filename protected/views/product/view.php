@@ -36,12 +36,12 @@ EOD;
 			
 				<div class="ps-slides">
 					
-					<div style="background-image:url(<?php echo $theproduct->pimg ; ?>);background-size:100% 100%;"></div>
+					<div style="background-color:#ddd;border:1px solid #ccc;background-image:url(<?php echo $theproduct->pimg ; ?>);background-size:auto 100%;"></div>
 					<?php 
 					foreach($products as $product){
 						$imgurl=$product->pimg;
 						echo <<<EOD
-						<div style="background-image:url($imgurl);background-size:100% 100%;"></div>
+						<div style="background-color:#ddd;border:1px solid #ccc;background-image:url($imgurl);background-size:atuo 100%;"></div>
 						
 
 EOD;

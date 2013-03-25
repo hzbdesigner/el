@@ -9653,3 +9653,28 @@ Stack trace:
 REQUEST_URI=/apps/el/index.php/admin/product/admin
 HTTP_REFERER=http://localhost/apps/el/index.php/admin/product/index
 ---
+2013/03/24 15:47:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: YES)' in /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /Applications/MAMP/htdocs/apps/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /Applications/MAMP/htdocs/apps/framework/base/CModule.php(388): CDbConnection->init()
+#3 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(431): CModule->getComponent('db')
+#4 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(624): CApplication->getDb()
+#5 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 /Applications/MAMP/htdocs/apps/framework/db/ar/CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Product))
+#7 /Applications/MAMP/htdocs/apps/el/protected/models/Product.php(28): CActiveRecord::model('Product')
+#8 /Applications/MAMP/htdocs/apps/el/protected/controllers/ProductController.php(17): Product::model()
+#9 [internal function]: ProductController->actionIndex('0', '0')
+#10 /Applications/MAMP/htdocs/apps/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProductController), Array)
+#11 /Applications/MAMP/htdocs/apps/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProductController), Object(ReflectionMethod), Array)
+#12 /Applications/MAMP/htdocs/apps/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /Applications/MAMP/htdocs/apps/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /Applications/MAMP/htdocs/apps/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(283): CController->run('index')
+#16 /Applications/MAMP/htdocs/apps/framework/web/CWebApplication.php(142): CWebApplication->runController('product/index')
+#17 /Applications/MAMP/htdocs/apps/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /Applications/MAMP/htdocs/apps/el/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/apps/el/index.php/product/index?tid=0&bid=0
+HTTP_REFERER=http://localhost/apps/el/index.php/about
+---
