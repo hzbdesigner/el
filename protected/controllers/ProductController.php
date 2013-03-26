@@ -48,8 +48,14 @@ class ProductController extends Controller
 	{		
 		$criteriaAll = new CDbCriteria;
 		$criteriaAll->order='pid DESC';
-		$criteriaAll->addCondition('bid='.$bid);
-		$criteriaAll->addCondition('tid='.$tid);
+		if($bid != 0){
+			
+			$criteriaAll->addCondition('bid='.$bid);
+		}
+		if($tid != 0){
+	
+			$criteriaAll->addCondition('tid='.$tid);
+		}
 		$products=Product::Model()->findAll($criteriaAll);
 		$theproduct=Product::Model()->findByPk($pid);
 		// if($products){echo "yes";}else{echo "no";}
