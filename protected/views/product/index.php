@@ -53,7 +53,7 @@ EOD;
 							$img=$product->pimg;
 							$title=$product->ptitle;
 							$pid=$product->pid;
-							$viewurl=$this->createUrl('view',array('pid'=>$pid,'bid'=$bid,'tid'=$tid));
+							$viewurl=$this->createUrl('view',array('pid'=>$pid,'bid'=>$bid,'tid'=>$tid));
 						echo <<<EOD
 							<li>
 								<a href='$viewurl'>
