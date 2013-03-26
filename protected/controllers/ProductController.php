@@ -44,11 +44,12 @@ class ProductController extends Controller
        	));
 	}
 	
-	public function actionView($pid)
+	public function actionView($pid,$bid,$tid)
 	{		
 		$criteriaAll = new CDbCriteria;
 		$criteriaAll->order='pid DESC';
-		
+		$criteriaAll->addCondition('bid='.$bid);
+		$criteriaAll->addCondition('tid='.$tid);
 		$products=Product::Model()->findAll($criteriaAll);
 		$theproduct=Product::Model()->findByPk($pid);
 		// if($products){echo "yes";}else{echo "no";}
