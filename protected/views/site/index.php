@@ -43,6 +43,15 @@
 				</div>
 			</div>
 		  </li>
+		  <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/slide5.jpg" alt="">
+			<div class="caption">
+				<p class="title">Henredon</p>
+				<div class="detail">
+					<p class="description">1945年，四个有志青年一起来到了北卡罗莱纳州摩根敦，他们心怀理想，决心打造定制家具的王牌。今天，当品评繁芜复杂的家具时, Henredon这个的名字代表了最佳。</p>
+					<div class="btn-no"><a href='<?php echo $this->createUrl('/brand/Henredon') ; ?>'>ENTER</a></div>
+				</div>
+			</div>
+		  </li>
 		</ul>
 	</div>
 	
