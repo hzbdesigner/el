@@ -112,27 +112,32 @@ class ActivityController extends Controller
 					
 					$_POST['Activity']['apic'] = 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/images/upload/'.$file_name;
 					
-					
-					if( $_POST['Activity']['atitle'] ){
-						
-						$model=new Activity;
-						$model->attributes=$_POST['Activity'];
-						if($model->save()){
-							
-							$this->redirect(array('admin'));
-						}else{
-							$msg = '保存失败！'; //如果没有保存到数据库的话
-							$error = '请正确填写文章标题、分类、正文~！';
-
-						}
-					}else{
-						$msg = '请填写名称！'; //Activity对象没有name属性的话
-					}
 				}else{
 					$msg = '请上传 png/jpg/gif 格式的图片LOGO';//如果上传的文件格式不对的话
 				}
 			}else{
 				$msg = '请上传头像图片'; //如果$_file为空的话
+			}
+
+			
+			if( $_POST['Activity']['atitle'] ){
+				
+				$model=new Activity;
+				$model->attributes=$_POST['Activity'];
+				$des=$_POST['Activity']['ades'];
+				$model->ades=$des;
+				$content=$_POST['Activity']['acontent'];
+				$model->acontent=$content;
+				if($model->save()){
+					
+					$this->redirect(array('admin'));
+				}else{
+					$msg = '保存失败！'; //如果没有保存到数据库的话
+					$error = '请正确填写文章标题、分类、正文~！';
+
+				}
+			}else{
+				$msg = '请填写名称！'; //Activity对象没有name属性的话
 			}	
 		}
 		
@@ -210,28 +215,33 @@ class ActivityController extends Controller
 					move_uploaded_file( $_FILES['apic']['tmp_name'] , $apic_file_path);  //拷贝副本，将副本文件存储到新的位置。
 					
 					$_POST['Activity']['apic'] = 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/images/upload/'.$file_name;
-					
-					
-					if( $_POST['Activity']['atitle'] ){
-						
-						$model->attributes=$_POST['Activity'];
-						if($model->save()){
-							
-							$this->redirect(array('admin'));
-						}else{
-							$msg = '保存失败！'; //如果没有保存到数据库的话
-							$error = '请正确填写文章标题、分类、正文~！';
 
-						}
-					}else{
-						$msg = '请填写名称！'; //Activity对象没有name属性的话
-					}
 				}else{
 					$msg = '请上传 png/jpg/gif 格式的图片LOGO';//如果上传的文件格式不对的话
 				}
 			}else{
 				$msg = '请上传头像图片'; //如果$_file为空的话
 			}	
+
+			if( $_POST['Activity']['atitle'] ){
+						
+				$model->attributes=$_POST['Activity'];
+				$des=$_POST['Activity']['ades'];
+				$model->ades=$des;
+				$content=$_POST['Activity']['acontent'];
+				$model->acontent=$content;
+
+				if($model->save()){
+					
+					$this->redirect(array('admin'));
+				}else{
+					$msg = '保存失败！'; //如果没有保存到数据库的话
+					$error = '请正确填写文章标题、分类、正文~！';
+
+				}
+			}else{
+				$msg = '请填写名称！'; //Activity对象没有name属性的话
+			}
 		}
 		
 		$types=Atype::model()->findAll();

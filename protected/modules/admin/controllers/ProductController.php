@@ -79,31 +79,34 @@ class ProductController extends Controller
 					move_uploaded_file( $_FILES['pimg']['tmp_name'] , $pimg_file_path);  //拷贝副本，将副本文件存储到新的位置。
 					
 					$_POST['Product']['pimg'] = 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/images/upload/'.$file_name;
-					
-					
-					if( $_POST['Product']['ptitle'] ){
-						
-						$model=new Product;
-						$model->attributes=$_POST['Product'];
-						// echo $model->ptitle;
-						// echo "1";
-						if($model->save()){
-							// echo "2";
-							$this->redirect(array('admin'));
-						}else{
-							// echo "3";
-							$msg = '保存失败！'; //如果没有保存到数据库的话
-							$error = '请正确填写文章标题、分类、正文~！';
 
-						}
-					}else{
-						$msg = '请填写名称！'; //Product对象没有name属性的话
-					}
+					
 				}else{
 					$msg = '请上传 png/jpg/gif 格式的图片LOGO';//如果上传的文件格式不对的话
 				}
 			}else{
 				$msg = '请上传头像图片'; //如果$_file为空的话
+			}
+			if( $_POST['Product']['ptitle'] ){
+						
+				$model=new Product;
+				
+				$model->attributes=$_POST['Product'];
+				$des=$_POST['Product']['pdes'];
+				$model->pdes=$des;
+				// echo $model->ptitle;
+				// echo "1";
+				if($model->save()){
+					// echo "2";
+					$this->redirect(array('admin'));
+				}else{
+					// echo "3";
+					$msg = '保存失败！'; //如果没有保存到数据库的话
+					$error = '请正确填写文章标题、分类、正文~！';
+
+				}
+			}else{
+				$msg = '请填写名称！'; //Product对象没有name属性的话
 			}	
 		}
 		
@@ -151,31 +154,34 @@ class ProductController extends Controller
 					move_uploaded_file( $_FILES['pimg']['tmp_name'] , $pimg_file_path);  //拷贝副本，将副本文件存储到新的位置。
 					
 					$_POST['Product']['pimg'] = 'http://'.$_SERVER['HTTP_HOST'].Yii::app()->baseUrl.'/images/upload/'.$file_name;
-					
-					if( $_POST['Product']['pimg'] ){echo 'pimg生成' ;}else{ echo 'pimg为空';}
-					if( $_POST['Product']['ptitle'] ){
-						
-						$model->attributes=$_POST['Product'];
-						if($model->save()){
-							
-							$this->redirect(array('admin'));
-						}else{
-							$msg = '保存失败！'; //如果没有保存到数据库的话
-							$error = '请正确填写文章标题、分类、正文~！';
 
-						}
-					}else{
-						$msg = '请填写名称！'; //Product对象没有name属性的话
-					}
+					
 				}else{
 					$msg = '请上传 png/jpg/gif 格式的图片LOGO';//如果上传的文件格式不对的话
 				}
 			}else{
 				$msg = '请上传头像图片'; //如果$_file为空的话
 			}	
+
+			if( $_POST['Product']['ptitle'] ){
+						
+				$model->attributes=$_POST['Product'];
+				$des=$_POST['Product']['pdes'];
+				$model->pdes=$des;
+				if($model->save()){
+					
+					$this->redirect(array('admin'));
+				}else{
+					$msg = '保存失败！'; //如果没有保存到数据库的话
+					$error = '请正确填写文章标题、分类、正文~！';
+
+				}
+			}else{
+				$msg = '请填写名称！'; //Product对象没有name属性的话
+			}
 		}
 		
-		$types=Atype::model()->findAll();
+		$types=Ptype::model()->findAll();
 		$brands=Brand::model()->findAll();
 		$sub_content=$this->renderPartial('update',array(
 			'types'=>$types,

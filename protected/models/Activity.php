@@ -40,7 +40,7 @@ class Activity extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('atitle, acontent, tid ,apic ,ades', 'required'),
+			// array('atitle, acontent, tid ,apic ,ades', 'required'),
 			array('tid', 'numerical', 'integerOnly'=>true),
 			array('atitle', 'length', 'max'=>255),
 			// The following rule is used by search().

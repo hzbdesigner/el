@@ -4,8 +4,9 @@
 		if( $error ){
 			echo "<div class='alert alert-error'><button type='button' class='close' data-dismiss='alert'>×</button>$error</div>";
 		}
+		$pid=$model->pid;
 	?>
-	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/product/create')?>" method='POST' enctype="multipart/form-data" >
+	<form class="form-horizontal" action="<?php echo $this->createUrl('/admin/product/update',array('pid'=>$pid))?>" method='POST' enctype="multipart/form-data" >
 		<fieldset>
 			<legend>添加产品</legend>
 			<div class="control-group">
