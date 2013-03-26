@@ -38,6 +38,10 @@ class SiteController extends Controller
 	{
 	   $this->render('comingsoon');
 	}
+	public function actionLogin()
+	{
+	   $this->redirect(array('/admin/default/index'));
+	}
 
 
 
