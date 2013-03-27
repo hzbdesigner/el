@@ -7,7 +7,7 @@
 我们提供市内送货服务，外埠送货需按实际情况酌情收取费用，迅速快捷的服务，免除您的后顾之忧。终身家具养护咨询，更会为您的生活带来周到的关爱。</p>
 	
 	<h2 style="font-size:16px;margin-bottom:5px;color:#fff;margin-top:10px;">本地配送</h2>
-	<p style="font-size:12px;color:#fff;line-height:16px;">在北京，我们提供市内送货服务和组装服务。我们将提前与顾客联系，确认配送事宜。如果预计交货日期与实际交货日期之间有变化，我们将及时通知客人；若客人要求变更交货日期，请提前三天通知我们。</p>
+	<p style="font-size:12px;color:#fff;line-height:16px;">在北京，我们提供市内送货服务和组装服务。我们将提前与顾客联系，确认配送事宜。如果预计交货日期与实际交货日期之间有变化，我们将及时通知客人；若客人要求变更交货日期，请提前三天通知我们（详见销售合同）。</p>
 
 
 	<h2 style="font-size:16px;margin-bottom:5px;color:#fff;margin-top:10px;">异地配送</h2>
