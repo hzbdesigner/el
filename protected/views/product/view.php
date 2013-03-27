@@ -50,10 +50,10 @@ EOD;
 
 				</div>
 				
-				<nav>
+				<div class="nav_slide">
 					<a href="#" class="ps-prev" ></a>
 					<a href="#" class="ps-next" ></a>
-				</nav>
+				</div>
 				
 			</div><!-- /ps-slidewrapper -->
 			

@@ -21,7 +21,7 @@
 }
 
 .ps-container > div > div,
-.ps-slidewrapper > nav,
+.ps-slidewrapper > .nav_slide,
 .ps-slides > div {
 	position: absolute;
 }
@@ -114,7 +114,7 @@
 	border:1px solid #ddd;
 }
 
-.ps-slidewrapper > nav {
+.ps-slidewrapper > .nav_slide {
 	width: 160px;
 	height:360px;
 	bottom: 0px;
@@ -122,7 +122,7 @@
 	z-index: 1000;
 }
 
-.ps-slidewrapper > nav > a {
+.ps-slidewrapper > .nav_slide > a {
 	width: 160px;
 	height: 160px;
 	position: relative;
@@ -131,28 +131,28 @@
 	outline: none;
 }
 
-.ps-slidewrapper > nav > a:first-child {
+.ps-slidewrapper > .nav_slide > a:first-child {
 	box-shadow: inset 0 0 0 9999px rgba(233,217,141,0.8);
 	margin-bottom:40px;
 }
 
-.no-touch .ps-slidewrapper > nav > a {
-	-webkit-transition: box-shadow 0.4s ease-in-out;
-	-moz-transition: box-shadow 0.4s ease-in-out;
-	-ms-transition: box-shadow 0.4s ease-in-out;
-	-o-transition: box-shadow 0.4s ease-in-out;
-	transition: box-shadow 0.4s ease-in-out;
+.no-touch .ps-slidewrapper > .nav_slide > a {
+	-webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
 }
 
-.no-touch .ps-slidewrapper > nav > a:hover {
+.no-touch .ps-slidewrapper > .nav_slide > a:hover {
 	box-shadow: inset 0 0 0 9999px rgba(246,224,121,0.1);
 }
 
-.no-touch .ps-slidewrapper > nav > a:first-child:hover {
+.no-touch .ps-slidewrapper > .nav_slide > a:first-child:hover {
 	box-shadow: inset 0 0 0 9999px rgba(249,15,15,0.1);
 }
 
-.ps-slidewrapper > nav > a:after {
+.ps-slidewrapper > .nav_slide > a:after {
 	content: '';
 	position: absolute;
 	width: 100px;
@@ -169,7 +169,7 @@
 	border-top: 1px solid #fff;
 }
 
-.ps-slidewrapper > nav > a:first-child:after {
+.ps-slidewrapper > .nav_slide > a:first-child:after {
 	-webkit-transform: rotate(-135deg);
 	-moz-transform: rotate(-135deg);
 	-o-transform: rotate(-135deg);
@@ -179,7 +179,7 @@
 }
 
 .ps-slides > div,
-.ps-slidewrapper > nav > a {
+.ps-slidewrapper > .nav_slide > a {
 	background-color: #fff;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -217,7 +217,7 @@
 		top: 50px;
 	}
 
-	.js .ps-slidewrapper > nav {
+	.js .ps-slidewrapper > .nav_slide {
 		height: 100px;
 	}
 

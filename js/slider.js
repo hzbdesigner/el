@@ -11,8 +11,8 @@ var Slider = (function() {
 		$slidescontainer = $slidewrapper.find( 'div.ps-slides' ),
 		$slides = $slidescontainer.children( 'div' ),
 		// navigation arrows
-		$navprev = $slidewrapper.find( 'nav > a.ps-prev' ),
-		$navnext = $slidewrapper.find( 'nav > a.ps-next' ),
+		$navprev = $slidewrapper.find( '.nav_slide > a.ps-prev' ),
+		$navnext = $slidewrapper.find( '.nav_slide > a.ps-next' ),
 		// current index for items and slides
 		current = 0,
 		// checks if the transition is in progress

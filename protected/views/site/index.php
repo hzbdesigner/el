@@ -34,7 +34,7 @@
 				</div>
 			</div>
 		  </li>
-		  <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/slide4.jpg" alt="">
+		  <li><img src="<?php echo Yii::app()->baseUrl; ?>/images/slide42.jpg" alt="">
 			<div class="caption">
 				<p class="title">Ourhouse</p>
 				<div class="detail">
