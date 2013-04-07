@@ -50,7 +50,7 @@ html,body{background-color:#e8e8e8;height:100%;width:100%;}
 	p{line-height:60px;.fs16;color:#fff;}
 }
 
-.nav{background:url("@{baseurl}/nav-bg.png") repeat-x;height:110px;width:100%;.pa;left:0px;top:0px;z-index:1000;
+.nav{background:url("@{baseurl}/nav-bg.png") repeat-x;height:110px;width:100%;.pa;left:0px;top:0px;z-index:1001;
 	.container{width:960px;.center-h;height:110px;background:url("@{baseurl}/logo-bg.png") no-repeat center center;.pr;
 		.logo{.disblock;.pa;height:100%;width:120px;left:50%;margin-left:-60px;z-index:20;text-indent:-999em;}
 		.nav-inner{height:58px;width:960px;.pr;top:50px;
@@ -239,7 +239,7 @@ html,body{background-color:#e8e8e8;height:100%;width:100%;}
 		}
 	}
 	.bottom-img{height:180px;.pa;left:0px;bottom:0px;width:100%;background:url(../images/bottom-img.png) repeat-x;}
-	.left-img{height:294px;.pa;left:0px;bottom:30px;width:317px;background:url(../images/left-img.png) no-repeat;z-index:999;}
+	.left-img{height:294px;.pa;left:0px;bottom:-30px;width:317px;background:url(../images/left-img.png) no-repeat;z-index:999;}
 }
 
 
@@ -635,21 +635,22 @@ html,body{background-color:#e8e8e8;height:100%;width:100%;}
 
 // activity slide
 		
-		.image_carousel{.pa;top:270px;width:960px !important;height:260px;z-index:998;left:0;right:0;margin-left:auto;margin-right:auto;
+		.image_carousel{.pa;top:270px;width:960px !important;height:260px;z-index:1000;left:0;right:0;margin-left:auto;margin-right:auto;
 
-			.pagination{.pr;bottom:0px;margin-left:50%;margin-top:30px;height:30px;.fl;display: block !important;
+			.pagination{.pr;bottom:0px;margin-left:50%;margin-top:30px;height:30px;.fl;display: none !important;
 				a{.pr;margin-right:10px;left:-50%;.disblock;.fl;background-color:#ddd;width:24px;height:24px;.tc;line-height:24px !important;color:#666;
 					span{.disblock;line-height: 24px;}
 					&:hover{color:@gold;}
 					&.selected{color:@gold;}
 				}
+
 			}
-			.next{.pa;right:200px;top:230px;display: block !important;width:24px;height:20px;.pt4;background-color:#ddd;.tc;color:#666;
+			.next{.pa;right:-30px;top:90px;display: block !important;width:24px;height:20px;.pt4;background-color:#ddd;.tc;color:#666;
 
 				&:hover{color:@gold;}
 			}
 
-			.prev{.pa;left:180px;top:230px;display: block !important;width:24px;height:20px;.pt4;background-color:#ddd;.tc;color:#666;
+			.prev{.pa;left:-30px;top:90px;display: block !important;width:24px;height:20px;.pt4;background-color:#ddd;.tc;color:#666;
 				&:hover{color:@gold;}
 			}
 			#foo2{width:960px; position: relative;
