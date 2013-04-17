@@ -121,7 +121,7 @@
 
 
 			</div>
-			<p class="copyright"><span>北京东方传奇家具有限公司版权所有©2013</span>&nbsp;&nbsp;<span>京ICP备 1111111111号</span></p>
+			<p class="copyright"><span>北京东方传奇家具有限公司版权所有©2013</span>&nbsp;&nbsp;<span>京ICP备 13010121号</span></p>
 		</div>
 	</div>
 
