@@ -128,6 +128,8 @@ class ActivityController extends Controller
 				$model->ades=$des;
 				$content=$_POST['Activity']['acontent'];
 				$model->acontent=$content;
+				$apic=$_POST['Activity']['apic'];
+				$model->apic=$apic;
 				if($model->save()){
 					
 					$this->redirect(array('admin'));
